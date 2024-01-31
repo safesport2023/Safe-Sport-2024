@@ -49,7 +49,7 @@ const HeroMsg = () => {
                     <p className='Athlete-message'> Damian won decathlon gold at Tokyo 2020, setting an Olympic record as he became just the fourth man to ever break the 9000-point mark. Warner led the two-day Olympic decathlon from start to finish across, 10-discipline event with 9018 points to become the first Canadian to earn the honourary title of World's Greatest Athlete. Warner had previously won bronze at Rio 2016 and finished fifth in his Olympic debutin London 2012.<br></br><br></br> Damian started in track and field at 17, at the suggestion of his high school basketball coaches. He had his Olympic dream sparked by watching Catriona Le May Doan and Donovan Bailey compete in track and field when he was a kid. Because of his basketball roots, his role model and athletic inspiration was the NBA's Vince Carter. Outside of sport Damian graduated from Fanshawe College in 2010 and enjoys art, video games, and travelling. His favourite motto is: “You can do anything you set your mind to” </p>
                     <div className="video-Container">
                         <video
-                            ref={videoRefs.damian}
+                            // ref={videoRefs.damian}
                             width="750"
                             height="500"
                             controls
@@ -82,7 +82,7 @@ const HeroMsg = () => {
                     <p className='Athlete-message'> Finlay Knox, was a member of the Canadian Olympic swim team in Tokyo 2020 and also  a two-time world championship medallist. Finlay is also a Pan American Games champion in the 200-metre individual medley and won two bronze in the 2023 PanAm games as part of the men's 4x100 metre freestyle relay and the mixed 4x100 freestyle relay teams.  He fell in love with the water while living in New Zealand before he and his family moved to Okotoks, Alberta, where he began his competetive swimming career. </p>
                     <div className="video-Container">
                         <video
-                            ref={videoRefs.finlay}
+                            // ref={videoRefs.finlay}
                             width="750"
                             height="500"
                             controls
@@ -97,13 +97,13 @@ const HeroMsg = () => {
                     <p className='Athlete-message'> Two-time Olympian Javier Acevedo was the youngest Canadian to earn a spot on the Rio 2016 Olympic swim team at age 18. He represented Canada again at the 2020 Olympic Games in Tokyo. Hailing from Toronto, Acevedo is a five-time world championship medallist and four-time Commonwealth Games medalist. Acevedo trains at the High Performance Centre - Ontario located in Toronto.</p>
                     <div className="video-Container">
                         <video
-                            ref={videoRefs.javier}
+                            // ref={videoRefs.javier}
                             width="750"
                             height="500"
                             controls
                             onPlay={() => handlePlay('javier')}
                         >
-                            <source src={VideoJavier} type="video/mp4" />
+                            <source src="https://www.youtube.com/embed/ScMzIvxBSi4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
@@ -113,7 +113,7 @@ const HeroMsg = () => {
                     </p>
                     <div className="video-Container">
                         <video
-                            ref={videoRefs.ella}
+                            // ref={videoRefs.ella}
                             width="750"
                             height="500"
                             controls
@@ -129,7 +129,7 @@ const HeroMsg = () => {
                     </p>
                     <div className="video-Container">
                         <video
-                            ref={videoRefs.javier}
+                            // ref={videoRefs.javier}
                             width="750"
                             height="500"
                             controls

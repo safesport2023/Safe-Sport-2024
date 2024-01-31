@@ -1,0 +1,183 @@
+.resources-page {
+    min-height: 1538px;
+    background-color: rgba(235, 246, 255, 0.2);
+    padding-top: 50px;
+}
+
+.content-section {
+
+    max-width: 600px;
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    /* Center the text block on the page */
+    padding: 40px;
+    /* Add some padding for breathing space */
+    font-family: 'Arial', sans-serif;
+    /* Choose a suitable font */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    line-height: 1.5;
+    /* Set the line height for better readability */
+    color: #333;
+    /* Set the text color */
+    background-color: #ffffffde !important;
+    /* Set a light background color */
+    border-radius: 8px;
+    /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-weight: 500;
+    text-align: left;
+    text-decoration: none;
+}
+
+.content-section2 {
+    max-width: 600px;
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    /* Center the text block on the page */
+    padding: 20px;
+    /* Add some padding for breathing space */
+    font-family: 'Arial', sans-serif;
+    /* Choose a suitable font */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    line-height: 1.5;
+    /* Set the line height for better readability */
+    color: #333;
+    /* Set the text color */
+    background-color: #f8f8f8dd;
+    /* Set a light background color */
+    border-radius: 8px;
+    /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+    margin-bottom: 100px;
+    margin-top: 100px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.content-section a {
+    color: #971d1d;
+}
+
+.content-section2 a {
+    color: #971d1d;
+}
+
+.important-text {
+    font-size: 19px;
+}
+
+.thickLine {
+    border: 2px solid #969696;
+    /* Set the border style, color, and width */
+    margin: 20px 0;
+    border-radius: 3px;
+    /* Add some spacing above and below the line */
+}
+
+.thickLine2 {
+    border: 3px solid #FF3131;
+    /* Set the border style, color, and width */
+    margin: 20px 0;
+    border-radius: 3px;
+    /* Add some spacing above and below the line */
+}
+
+.thinLine {
+    border: 2px solid #FF3131;
+    /* Set the border style, color, and width */
+    margin: 20px 0;
+    border-radius: 2px;
+    float: left;
+    width: 50%;
+    /* Add some spacing above and below the line */
+    display: inline-block;
+}
+
+.logo-title {
+    padding-left: 8px;
+
+}
+
+.image-links1 {
+    max-height: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+
+    transition: all .2s ease-in-out;
+
+}
+
+.image-links2 {
+    max-height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+
+    transition: all .2s ease-in-out;
+
+}
+
+.image-links3 {
+    max-height: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+
+    transition: all .2s ease-in-out;
+
+}
+
+.image-links1:hover {
+    max-height: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+
+    transform: scale(1.1);
+
+}
+
+.image-links2:hover {
+    max-height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+
+    transform: scale(1.1);
+
+}
+
+.image-links3:hover {
+    max-height: 120px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+
+    transform: scale(1.1);
+
+}
+
+.image-links3:hover {
+    max-height: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+
+    transform: scale(1.1);
+
+}
+
+.logoandtextline {
+    display: flex;
+    /* Use Flexbox to control layout */
+    align-items: center;
+    /* Center items vertically */
+    gap: 15px;
+}

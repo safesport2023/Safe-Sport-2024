@@ -1,0 +1,217 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Avenir Light', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Avenir Bold', sans-serif !important;
+  /* Use Avenir Bold for headers */
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 42px;
+
+}
+
+h3 {
+  font-size: 30px !important;
+}
+
+h4 {
+  font-size: 24px !important;
+}
+
+p {
+  font-family: 'Avenir Light', sans-serif !important;
+  /* Use Avenir Light for body text */
+  font-size: 19px;
+}
+
+a {
+  font-family: 'Avenir Light', sans-serif;
+}
+
+.page-title-div {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+.page-title {
+  font-family: 'Avenir Black', sans-serif !important;
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.8);
+  max-width: 900px;
+
+}
+
+.custom-links {
+  text-decoration: none;
+  color: rgb(155, 56, 56);
+
+}
+
+.bulliedbrain {
+  text-decoration: none;
+  color: #00637C !important;
+  font-weight: 900 !important;
+  transition: all .2s ease-in-out !important;
+
+}
+
+.bulliedbrain:hover {
+  text-decoration: none;
+  color: #00637C !important;
+  font-weight: 900 !important;
+  transform: scale(1.1) !important;
+}
+
+.custom-links:hover {
+  text-decoration: none;
+  color: rgb(155, 56, 56);
+
+}
+
+.default-div {
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  padding: 20px;
+
+  font-family: 'Avenir Light', sans-serif;
+  /* Choose a suitable font */
+
+  /* Adjust the font size as needed */
+  line-height: 1.5;
+  /* Set the line height for better readability */
+  color: #333;
+  /* Set the text color */
+  background-color: #f8f8f8dd;
+  /* Set a light background color */
+  border-radius: 8px;
+  /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  /* Add a subtle box shadow */
+
+  margin-top: 100px;
+}
+
+
+footer {
+
+  background-color: #c1c1c1;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Avenir Light', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .default-div {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    font-family: 'Avenir Light', sans-serif;
+    /* Choose a suitable font */
+
+    /* Adjust the font size as needed */
+    line-height: 1.5;
+    /* Set the line height for better readability */
+    color: #333;
+    /* Set the text color */
+    background-color: #f8f8f8dd;
+    /* Set a light background color */
+    border-radius: 8px;
+    /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .page-title {
+    font-family: 'Avenir Black', sans-serif !important;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.8);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  .default-div {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    font-family: 'Avenir Light', sans-serif;
+    /* Choose a suitable font */
+
+    /* Adjust the font size as needed */
+    line-height: 1.5;
+    /* Set the line height for better readability */
+    color: #333;
+    /* Set the text color */
+    background-color: #f8f8f8dd;
+    /* Set a light background color */
+    border-radius: 8px;
+    /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .page-title {
+    font-family: 'Avenir Black', sans-serif !important;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.8);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+}

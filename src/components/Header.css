@@ -1,0 +1,20 @@
+.header {
+  background-color: white;
+  padding: 0px;
+  /* Other styles */
+
+
+
+
+}
+
+.logo {
+  max-height: 100px;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: center;
+
+
+}

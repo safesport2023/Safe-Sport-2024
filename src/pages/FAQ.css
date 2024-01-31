@@ -1,0 +1,86 @@
+.FAQ-page {
+
+    min-height: 938px;
+    background-color: rgba(235, 246, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.faq-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+
+
+.answer {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+}
+
+.question {
+    width: 100%;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+}
+
+
+
+
+.line-divider {
+    width: 2px;
+
+    background-color: #ccc;
+    margin: 10px;
+
+    /* Adjust the margin as needed */
+}
+
+/* Optional: Add styling for better visual appeal */
+.faq-card {
+    max-width: 900px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    min-height: 300px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+.sub-sections {
+    max-width: 900px;
+
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+
+    overflow: hidden;
+
+    padding: 20px;
+}

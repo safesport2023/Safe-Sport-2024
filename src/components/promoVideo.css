@@ -1,0 +1,28 @@
+/* Video.css */
+
+.video-container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+video {
+  max-width: 100%;
+  display: block;
+}
+
+.videoTitle {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+
+}
+
+.title-font {
+  background-color: whitesmoke;
+  margin: 0 auto;
+  max-width: fit-content;
+  padding-left: 82px;
+  padding-right: 82px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -10px;
+}

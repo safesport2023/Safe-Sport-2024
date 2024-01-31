@@ -1,0 +1,236 @@
+.video-Container {
+    padding: 20px;
+}
+
+.signOut-btn {
+    background-color: #ff3131;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.signOut-btn:hover {
+    background-color: #e68a00;
+}
+
+.premium-page {}
+
+.hero-messages {
+
+    min-height: 1538px;
+}
+
+.content-section {
+    max-width: 900px;
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    /* Center the text block on the page */
+    padding-top: 20px;
+    margin-bottom: 40px !important;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    /* Add some padding for breathing space */
+    font-family: 'Arial', sans-serif;
+    /* Choose a suitable font */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    line-height: 1.5;
+    /* Set the line height for better readability */
+    color: #333;
+    /* Set the text color */
+    background-color: #f8f8f8dd;
+    /* Set a light background color */
+    border-radius: 8px;
+    /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    /* Add a subtle box shadow */
+
+    align-items: center;
+
+}
+
+.default-div {
+    max-width: 900px !important;
+
+}
+
+.Header-hero {
+    text-align: center;
+    /* font-size: 32px !important; */
+}
+
+.Athlete-message {
+    width: 100% !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    text-align: left;
+}
+
+
+
+.video-Container {
+
+    margin: 0 auto;
+}
+
+.messages-page {
+    background-color: rgba(235, 246, 255, 0.2);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.video-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 80px; */
+    /* justify-content: center; */
+
+    max-width: 900px;
+    position: relative;
+    z-index: 1;
+
+}
+
+video {
+    width: 100%;
+}
+
+@media (max-width: 425px) {
+    .Athlete-message {
+        width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .video-Container {
+        padding-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px !important;
+        /* gap: 80px; */
+        /* justify-content: center; */
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 900px;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    .hero-messages {
+
+        min-height: 538px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    video {
+        height: auto;
+        width: 100% !important;
+    }
+
+    .content-section {
+        max-width: 900px;
+        /* Adjust the maximum width as needed */
+        margin: 0 auto;
+        /* Center the text block on the page */
+        padding-top: 20px;
+        margin-bottom: 40px !important;
+        /* padding-left: 40px;
+        padding-right: 40px; */
+        /* Add some padding for breathing space */
+        font-family: 'Arial', sans-serif;
+        /* Choose a suitable font */
+        font-size: 16px;
+        /* Adjust the font size as needed */
+        line-height: 1.5;
+        /* Set the line height for better readability */
+        color: #333;
+        /* Set the text color */
+        background-color: #f8f8f8dd;
+        /* Set a light background color */
+        border-radius: 8px;
+        /* Add rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        /* Add a subtle box shadow */
+
+        align-items: center;
+
+    }
+
+    .Header-hero {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Athlete-message {
+        width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .video-container {
+        padding-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        /* gap: 80px; */
+        /* justify-content: center; */
+
+        max-width: 900px;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    .Header-hero {
+        padding-top: 0px;
+    }
+
+    .hero-messages {
+
+        min-height: 538px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    video {
+        height: auto;
+        width: 100% !important;
+    }
+
+    .content-section {
+        max-width: 900px;
+        /* Adjust the maximum width as needed */
+        margin: 0 auto;
+        /* Center the text block on the page */
+        padding-top: 20px;
+        margin-bottom: 40px !important;
+        /* padding-left: 40px;
+        padding-right: 40px; */
+        /* Add some padding for breathing space */
+        font-family: 'Arial', sans-serif;
+        /* Choose a suitable font */
+        font-size: 16px;
+        /* Adjust the font size as needed */
+        line-height: 1.5;
+        /* Set the line height for better readability */
+        color: #333;
+        /* Set the text color */
+        background-color: #f8f8f8dd;
+        /* Set a light background color */
+        border-radius: 8px;
+        /* Add rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        /* Add a subtle box shadow */
+
+        align-items: center;
+
+    }
+}

@@ -1,0 +1,146 @@
+.home-page {
+    min-height: 1400;
+    background-color: rgba(235, 246, 255, 0.2);
+    padding-top: 50px;
+}
+
+ul {
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Avenir Light', sans-serif;
+}
+
+li {
+    justify-content: start;
+    font-family: 'Avenir Light', sans-serif;
+    text-align: left;
+}
+
+.video-Container {
+    padding-bottom: 200px;
+}
+
+.signOut-btn {
+    background-color: #FF3131 !important;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+}
+
+.signOut-btn:hover {
+    background-color: #e68a00;
+}
+
+.education-page {
+    /* height: 900px !important; */
+}
+
+.amplify-button {
+    background-color: #Ff3131;
+    color: rgb(31, 31, 31);
+}
+
+/* .amplify-tabs-item:hover {
+    color: #ff3131;
+    border-color: #ff3131;
+}
+
+.amplify-tabs-item:active {
+    color: #ff3131;
+    border-color: #ff3131;
+} */
+
+.auth-block {
+
+    margin-top: 0 !important;
+    width: auto;
+
+}
+
+.amplify-button {
+    color: #FF3131;
+}
+
+
+
+.default-div {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    font-family: 'Avenir', sans-serif;
+    /* Choose a suitable font */
+
+    /* Adjust the font size as needed */
+    line-height: 1.5;
+    /* Set the line height for better readability */
+    color: #3b3b3b;
+    /* Set the text color */
+    background-color: #f8f8f8dd;
+    /* Set a light background color */
+    border-radius: 8px;
+    /* Add rounded corners */
+
+    /* Add a subtle box shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .default-div {
+        max-width: 100vh;
+
+        margin: 0 auto;
+
+        padding: 20px;
+
+        font-family: 'Arial', sans-serif;
+        /* Choose a suitable font */
+
+        /* Adjust the font size as needed */
+        line-height: 1.5;
+        /* Set the line height for better readability */
+        color: #333;
+        /* Set the text color */
+        background-color: #f8f8f8dd;
+        /* Set a light background color */
+        border-radius: 8px;
+        /* Add rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        /* Add a subtle box shadow */
+
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+.data-amplify-authenticator {}
+
+.logout-btn {
+    display: flex;
+    justify-content: right;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+/* .gap-container {
+    
+    max-width: 400px;
+    min-height: 800px;
+} */

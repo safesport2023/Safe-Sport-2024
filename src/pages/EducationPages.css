@@ -1,0 +1,190 @@
+@media (min-width: 768px) {
+  .signOut-btn {
+    background-color: #ff3131;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.6s ease;
+    margin-left: auto;
+    /* Push the button to the right */
+  }
+}
+
+@media (max-width: 768px) {
+  .signOut-btn {
+    background-color: #ff3131;
+    color: white;
+    border: none;
+    padding: 0px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.6s ease;
+    margin-right: -20px;
+    margin-top: -10px;
+    /* Push the button to the right */
+  }
+}
+
+@media (max-width: 425px) {
+  .signOut-btn {
+    background-color: #ff3131;
+    color: white;
+    border: none;
+    padding: 0px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.6s ease;
+    margin-right: -180px;
+    margin-top: -20px;
+    /* Push the button to the right */
+  }
+}
+
+.logout-btn {
+  position: absolute;
+  right: 10px;
+  top: 120px;
+}
+
+
+.signOut-btn:hover {
+  background-color: #fa9d9d;
+}
+
+.education-page {
+  min-height: 1538px;
+  background-color: rgba(235, 246, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+
+}
+
+
+.auth-block {
+  margin-top: 10rem;
+
+}
+
+
+
+.video-container {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 80px; */
+  /* justify-content: center; */
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+
+}
+
+
+
+
+.locked {
+
+  filter: grayscale(90%);
+  position: relative !important;
+  pointer-events: none;
+  background-image: url('../assets/lock.png') !important;
+  transition: filter 0.6s ease, background-size 0.6s ease;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 3 !important;
+}
+
+
+.locked::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../assets/lock.png');
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  opacity: .9;
+  /* Adjust the opacity as needed */
+  pointer-events: none;
+  z-index: 4;
+  transition: filter 0.6s ease, background-size 0.6s ease;
+  /* Place the overlay above the video */
+}
+
+
+
+.video-container video {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+
+
+  /* Ensure relative positioning for overlay within each video */
+}
+
+.lock-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 300px;
+  /* height: auto; */
+  background: rgba(0, 0, 0, 0);
+  /* Semi-transparent black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  transition: background-color 0.6s ease;
+}
+
+.titles-container {
+  background-color: #ffffff;
+  /* Grey background color */
+  /* padding: 20px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  /* Adjust the padding as needed */
+  border-radius: 0 0 8px 8px;
+  /* Rounded corners for the top */
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: -10px;
+  margin-bottom: 80px;
+  min-height: 220px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.video-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #3b3b3b;
+  font-size: 23px;
+  margin-bottom: 10px;
+  text-align: left;
+  /* Left-align the title */
+  /* Space between title and info */
+}
+
+.video-info {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #3b3b3b;
+  font-size: 18px;
+  margin: 0;
+  text-align: left;
+  /* Left-align the title */
+  /* Remove default margin for the paragraph */
+}

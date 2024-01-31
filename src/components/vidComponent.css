@@ -1,0 +1,82 @@
+.video-player {
+    position: relative;
+    border-radius: 5px;
+    border: 10px;
+}
+
+.video-player.not-playing .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent grey overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-player.not-playing .overlay p {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+.progress-text {
+    /* display: none; */
+}
+
+/* .video-container {
+    max-width: 500px;
+    margin: 0;
+}
+
+.video-player {
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.control-button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.progress-bar-container {
+    margin-top: 10px;
+
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 4px;
+
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #4285f4;
+    border-radius: 4px;
+}
+
+.time-indicators {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #5555
+} */

@@ -1,0 +1,234 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  z-index: 1;
+  /* background-color: aqua; */
+}
+
+/* .App {
+  
+  background: url('../public/assets/stock6redtriangle.png') no-repeat center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position-y: 100px;
+  min-width: 100vh !important;
+  margin: 0 !important;
+  padding-top: 0 !important;
+  max-height: 800px !important;
+} */
+.App {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  /* Hide horizontal overflow */
+}
+
+.App:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../public/assets/stock6redtriangle.png') no-repeat center top;
+  background-size: cover;
+  /* Cover the entire viewport */
+  z-index: -1;
+  margin-top: 100px;
+}
+
+
+
+
+
+
+.content-link {
+  /*margin: 1em;*/
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: 'Avenir Bold', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(41, 41, 41);
+  /* Adjust the color as needed */
+  text-decoration: none;
+  transition: color 1.3s ease, transform 1.3s ease, font-size 1.3s ease;
+  /* Add a smooth color transition */
+  transform-origin: center bottom;
+  /* Set the transform origin */
+  overflow: hidden !important;
+  background-color: #c1c1c1;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .content-mobile {
+    display: none;
+    /* Hide desktop menu on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .content-desktop {
+    /* Hide desktop menu on smaller screens */
+    display: none;
+  }
+
+  .content-link {
+    display: none;
+  }
+}
+
+.content-desktop {
+  /*margin: 1em;*/
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  /* Adjust the color as needed */
+  text-decoration: none;
+  transition: color 1.3s ease, transform 1.3s ease, font-size 1.3s ease;
+  /* Add a smooth color transition */
+  transform-origin: center bottom;
+  /* Set the transform origin */
+  overflow: hidden !important;
+  background-color: #c1c1c1;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 80px;
+}
+
+.active {
+  color: #3b3b3b;
+  font-size: 22px;
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2px;
+  margin-bottom: 45px;
+  border-radius: 5px;
+}
+
+.desktop-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.desktop-menu a {
+  /* Copy the styles from the .content class for desktop menu items */
+  font-family: 'Avenir Bold', sans-serif;
+  font-size: 20px;
+
+  color: white;
+  text-decoration: none;
+  transition: color 1.3s ease, transform 1.3s ease, font-size 1.3s ease;
+  transform-origin: center bottom;
+  overflow: hidden !important;
+  background-color: #c1c1c1;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .content-desktop {
+    display: none;
+  }
+
+  .content-link {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  /* .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #a65252;
+    padding: 10px;
+    z-index: 1000;
+    min-height: 300px;
+    min-width: 300px;
+  } */
+
+  .mobile-menu.visible .content-link {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    top: 10px;
+    right: 0px;
+    background-color: #c1c1c1;
+    padding: 0px;
+    z-index: 1000;
+    min-height: 10px;
+    min-width: 10px;
+
+
+
+    /* Change from 'none' to 'flex' */
+  }
+
+  .active {
+    margin-bottom: 0;
+    /* Adjust as needed */
+  }
+
+  .content {
+    height: 50px !important;
+  }
+}
+
+
+/* Additional styles for hamburger menu */
+.hamburger {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu.visible {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  gap: 25px;
+  position: absolute;
+  top: 160px;
+  /* Adjust the top position as needed */
+  right: 0;
+  background-color: #c1c1c1;
+  padding: 10px;
+  z-index: 1000;
+  /* min-height: 300px;
+  min-width: 300px; */
+}
+
+.content-mobile {
+  background-color: #c1c1c1;
+  min-height: 60px;
+}

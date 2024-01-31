@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+.footer {
+  background-color: #c1c1c1;
+  padding: 15px;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  z-index: 1;
+  /* Add this line */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* max-width: max-content; */
+  margin: 0 auto;
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+/* custom for the images on the left */
+.athlCan {
+  background-color: white;
+}
+
+.swim-voll {}
+
+.footer-logos img {
+  min-height: 80px;
+  max-height: 100px;
+  margin-right: 10px;
+  margin-bottom: -15px;
+}
+
+.footer-logo {
+  /* Center the main logo */
+  text-align: center;
+}
+
+.footer-logo img {
+  max-height: 90px;
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+/* Optional: Style the contact info */
+.footer-contact p {
+  margin-bottom: -15px;
+  padding-right: 25px;
+}
+
+.footer-logos a {
+  text-decoration: none;
+  /* Remove default underline for links */
+}
+
+.footer-logos img {
+  max-height: 60px;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+  /* Add smooth transition for hover effect */
+}
+
+.footer-logos a:hover img {
+  transform: scale(1.1);
+  /* Increase size on hover */
+}
+
+
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    width: 100%;
+
+  }
+
+  .footer-logo,
+  .footer-logos,
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-logo img,
+  .footer-logos img {
+    max-height: 60px;
+  }
+
+  .footer-contact {
+
+    padding-bottom: 15px;
+  }
+
+  .footer-logos img {
+    min-height: 60px;
+    max-height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .footer-contact p {
+    margin-bottom: -15px;
+    padding-bottom: 0px;
+  }
+
+  .footer-logos {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    width: 100%;
+
+  }
+
+  .footer-logo,
+  .footer-logos,
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-logo img,
+  .footer-logos img {
+    max-height: 60px;
+  }
+
+  .footer-contact {
+
+    padding-bottom: 5px;
+
+  }
+
+  .footer-logos img {
+    min-height: 60px;
+    max-height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .footer-contact p {
+    margin-bottom: -15px;
+    padding-right: 0px;
+  }
+
+  .footer-logos {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+  }
+}

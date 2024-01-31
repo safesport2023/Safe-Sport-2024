@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-safesport2024-dev-124618-authRole",
+      "UnauthRoleArn": "arn:aws:iam::009365261521:role/amplify-safesport2024-dev-124618-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::009365261521:role/amplify-safesport2024-dev-124618-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-safesport2024-dev-124618-deployment",
+      "UnauthRoleName": "amplify-safesport2024-dev-124618-unauthRole",
+      "StackName": "amplify-safesport2024-dev-124618",
+      "StackId": "arn:aws:cloudformation:us-east-1:009365261521:stack/amplify-safesport2024-dev-124618/a40c7fa0-c060-11ee-b1a9-0e4c6e567c89",
+      "AmplifyAppId": "dkxfrmy1vkjm"
+    },
+    "categories": {
+      "auth": {
+        "safesport20245b6bff87": {}
+      }
+    }
+  }
+}

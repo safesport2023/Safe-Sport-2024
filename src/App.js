@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 
 
 
+
 function App() {
 
   // State to manage the visibility of the mobile menu

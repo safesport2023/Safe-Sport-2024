@@ -1,4 +1,5 @@
 import React, { useState, } from 'react';
+import { Storage } from 'aws-amplify';
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import './EducationPages.css';

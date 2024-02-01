@@ -1,0 +1,14 @@
+{
+  "resourceName": "videoAndOtherStorage",
+  "policyUUID": "014a0d1f",
+  "bucketName": "safesport2024storage",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

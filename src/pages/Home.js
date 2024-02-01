@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 
 // const localVideoPath = '../../public/assets/placeholder1.mp4';
 const Home = () => {
-
     return (
         <div className='home-page'>
             <div className='page-title-div'>
@@ -61,11 +60,7 @@ const Home = () => {
                 </p>
             </div>
 
-            {/* <div className='video-Container'>
-                <Video1 videoEmbedLink={youtubeEmbedLink} />
-                
 
-            </div> */}
 
             <div className='gap-container'>
             </div>

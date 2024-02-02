@@ -13,10 +13,21 @@
     },
     "categories": {
       "auth": {
-        "safesport20245b6bff87": {}
+        "safesport20245b6bff87": {},
+        "userPoolGroups": {}
       },
       "storage": {
         "videoAndOtherStorage": {}
+      },
+      "api": {
+        "safesport2024": {},
+        "AdminQueries": {}
+      },
+      "function": {
+        "AdminQueries31419f62": {
+          "deploymentBucketName": "amplify-safesport2024-dev-124618-deployment",
+          "s3Key": "amplify-builds/AdminQueries31419f62-744c514867634f71574d-build.zip"
+        }
       }
     }
   }

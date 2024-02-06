@@ -6,11 +6,11 @@ import { InView } from 'react-intersection-observer';
 
 
 
-const videoDamianNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/No%20Captions/Damian-Warner-No-Cap.mp4';
-const videoFinlayNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/No%20Captions/Finlay-Knox-No-Cap.mp4';
-const videoMarissaNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/No%20Captions/Marisaa-Papaconstantinou-No-Cap.mp4';
-const videoJavierNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/No%20Captions/Javier-Acevedo-No-Cap.mp4';
-const videoEllaNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/No%20Captions/Ella-Jansen-No-Cap.mp4';
+const videoDamianNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Warner_V3_SRT_English.mp4';
+const videoFinlayNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Knox_V3_SRT_English.mp4';
+const videoMarissaNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Papaconstantinou_V3_SRT_English.mp4';
+const videoJavierNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Acevedo_V3_SRT_English.mp4';
+const videoEllaNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Jansen_V3_SRT_English.mp4';
 
 
 

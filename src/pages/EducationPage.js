@@ -8,14 +8,24 @@ import awsconfig from '../aws-exports';
 import { InView } from 'react-intersection-observer';
 
 // Video imports
-// import englishVideo00 from '../assets/courses/english/English_Course_00.mp4';
-// import englishVideo01 from '../assets/courses/english/English_Course_01.mp4';
-// import englishVideo02 from '../assets/courses/english/English_Course_02.mp4';
-// import englishVideo03 from '../assets/courses/english/English_Course_03.mp4';
-// import englishVideo04 from '../assets/courses/english/English_Course_04.mp4';
-// import englishVideo05 from '../assets/courses/english/English_Course_05.mp4';
-// import englishVideo06 from '../assets/courses/english/English_Course_06.mp4';
-// import englishVideo07 from '../assets/courses/english/English_Course_07.mp4';
+const englishVideo00 = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_00_Intro_V6_SRT_English.mp4';
+const englishVideo01 = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_01_Bullying_V6_SRT_English.mp4';
+const englishVideo02 = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_02_Hazing_V6_SRT_English.mp4';
+const englishVideo03 = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_03_Boundery Transgression_V6_SRT_English.mp4';
+const englishVideo04 = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_04_Grooming_V6_SRT_English.mp4';
+const englishVideo05 = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_05_Discrimination_V6_SRT_English.mp4';
+const englishVideo06 = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_06_Neglect_V6_SRT_English.mp4';
+const englishVideo07 = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_07_Report_V6_SRT_English.mp4';
+//french video imports
+const frenchVideo00 = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_00_Intro_V6_SRT_French.mp4';
+const frenchVideo01 = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_01_Bullying_V6_SRT_French.mp4';
+const frenchVideo02 = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_02_Hazing_V6_SRT_French.mp4';
+const frenchVideo03 = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_03_Boundery Transgression_V6_SRT_French.mp4';
+const frenchVideo04 = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_04_Grooming_V6_SRT_French.mp4';
+const frenchVideo05 = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_05_Discrimination_V6_SRT_French.mp4';
+const frenchVideo06 = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_06_Neglect_V6_SRT_French.mp4';
+const frenchVideo07 = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_07_Report_V6_SRT_French.mp4';
+
 
 Amplify.configure(awsconfig);
 
@@ -71,9 +81,7 @@ const EducationPage = () => {
 
                             <div className="video-container">
 
-                                {/* <div className='intro-container'>
-                                <p className='intro-paragraph'>Here are the videos!  We’ve designed the user experience to have the most impact when the videos are watched in order. We want to build on foundational knowledge as we go through the content resulting in the best learning experience possible. So no skipping ahead. Once you are done watching one video, the next will automatically unlock for viewing 24/7 at your own pace. Please remember you can check out our resources and support page (link) at any time.</p>
-                            </div> */}
+
 
 
                                 <video

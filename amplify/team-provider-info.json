@@ -1,33 +1,22 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-safesport2024-dev-124618-authRole",
-      "UnauthRoleArn": "arn:aws:iam::009365261521:role/amplify-safesport2024-dev-124618-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::009365261521:role/amplify-safesport2024-dev-124618-authRole",
+      "AuthRoleName": "amplify-safesport2024-dev-152331-authRole",
+      "UnauthRoleArn": "arn:aws:iam::009365261521:role/amplify-safesport2024-dev-152331-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::009365261521:role/amplify-safesport2024-dev-152331-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-safesport2024-dev-124618-deployment",
-      "UnauthRoleName": "amplify-safesport2024-dev-124618-unauthRole",
-      "StackName": "amplify-safesport2024-dev-124618",
-      "StackId": "arn:aws:cloudformation:us-east-1:009365261521:stack/amplify-safesport2024-dev-124618/a40c7fa0-c060-11ee-b1a9-0e4c6e567c89",
-      "AmplifyAppId": "dkxfrmy1vkjm"
+      "DeploymentBucketName": "amplify-safesport2024-dev-152331-deployment",
+      "UnauthRoleName": "amplify-safesport2024-dev-152331-unauthRole",
+      "StackName": "amplify-safesport2024-dev-152331",
+      "StackId": "arn:aws:cloudformation:us-east-1:009365261521:stack/amplify-safesport2024-dev-152331/6f24f210-c464-11ee-abb0-0e097c1c981f",
+      "AmplifyAppId": "d1sspm9y4rh45m"
     },
     "categories": {
       "auth": {
-        "safesport20245b6bff87": {},
-        "userPoolGroups": {}
-      },
-      "storage": {
-        "videoAndOtherStorage": {}
+        "safesport20241696693f": {}
       },
       "api": {
-        "safesport2024": {},
-        "AdminQueries": {}
-      },
-      "function": {
-        "AdminQueries31419f62": {
-          "deploymentBucketName": "amplify-safesport2024-dev-124618-deployment",
-          "s3Key": "amplify-builds/AdminQueries31419f62-744c514867634f71574d-build.zip"
-        }
+        "safesport2024": {}
       }
     }
   }

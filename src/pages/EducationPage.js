@@ -59,7 +59,12 @@ const EducationPage = () => {
                 <div className='page-title-div'>
                     <h1 className='page-title'>Educational Video Content</h1>
                 </div>
-                <Authenticator>
+                <Authenticator onAuthStateChange={(authState) => {
+                    if (authState === 'signedIn') {
+                        // User just signed in
+                        console.log('User signed in', authState.user);
+                    }
+                }}>
                     {({ signOut, user }) => (
                         <div className="education-page1">
                             <div className="logout-btn">

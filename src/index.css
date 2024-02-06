@@ -65,6 +65,10 @@ a {
   padding-bottom: 0px;
 }
 
+.validate-page {
+  min-height: 900px !important;
+}
+
 .page-title {
   font-family: 'Avenir Black', sans-serif !important;
   color: rgb(255, 255, 255);

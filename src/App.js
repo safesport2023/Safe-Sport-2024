@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import { Amplify } from 'aws-amplify';
+import awsExports from './aws-exports';
 import Home from './pages/Home';
 import FAQ from './pages/FAQ';
 import EducationPage from './pages/EducationPage';
@@ -8,13 +10,14 @@ import Resources from './pages/Resources';
 import Header from './components/Header';
 import HeroMsg from './pages/HeroMsg';
 import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.css';
 // import MobileMenu from './components/MobileMenu';
 
 
-
+Amplify.configure(awsExports);
 
 function App() {
-
+  const [isAuthenticated, setIsAuthenticated] = React.useState(false);
   // State to manage the visibility of the mobile menu
   const [mobileMenuVisible, setMobileMenuVisible] = React.useState(false);
 
@@ -55,7 +58,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/FAQ" element={<FAQ />}></Route>
-            <Route path="/education" element={<EducationPage />}></Route>
+            <Route path="/education" element={<EducationPage isAuthenticated={isAuthenticated} />}></Route>
             <Route path="/HeroMsg" element={<HeroMsg />}></Route>
             <Route path="/Resources" element={<Resources />}></Route>
           </Routes>

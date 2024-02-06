@@ -14,7 +14,12 @@ const Home = () => {
             <div className='page-title-div'>
                 <h1 className='page-title'>Welcome to Safe Sport <br></br> Education for Youth</h1>
             </div>
-            <Authenticator className='auth-block'>
+            <Authenticator className='auth-block' onAuthStateChange={(authState) => {
+                if (authState === 'signedIn') {
+                    // User just signed in
+                    console.log('User signed in', authState.user);
+                }
+            }}>
                 {({ signOut, user }) => (
                     <div className='other'>
                         <div className='logout-btn'>

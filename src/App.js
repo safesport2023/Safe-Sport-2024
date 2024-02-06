@@ -5,6 +5,7 @@ import { Amplify } from 'aws-amplify';
 import awsExports from './aws-exports';
 import Home from './pages/Home';
 import FAQ from './pages/FAQ';
+
 import EducationPage from './pages/EducationPage';
 import Resources from './pages/Resources';
 import Header from './components/Header';
@@ -17,7 +18,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 Amplify.configure(awsExports);
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = React.useState(false);
+
   // State to manage the visibility of the mobile menu
   const [mobileMenuVisible, setMobileMenuVisible] = React.useState(false);
 
@@ -39,6 +40,7 @@ function App() {
             <NavLink className="content-link" activeClassName="active" to="/HeroMsg">Hear From Your Heroes</NavLink>
             <NavLink className="content-link" activeClassName="active" to="/Resources">Resources and Support</NavLink>
             <NavLink className="content-link" activeClassName="active" to="/FAQ">FAQs</NavLink>
+
           </div>
           <div className="content-mobile">
             <button className="hamburger" onClick={toggleMobileMenu}>
@@ -50,6 +52,7 @@ function App() {
               <NavLink className="content-link" activeClassName="active" to="/HeroMsg">Hear From Your Heroes</NavLink>
               <NavLink className="content-link" activeClassName="active" to="/Resources">Resources and Support</NavLink>
               <NavLink className="content-link" activeClassName="active" to="/FAQ">Frequently Asked Questions</NavLink>
+
             </div>
 
           </div>
@@ -58,9 +61,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/FAQ" element={<FAQ />}></Route>
-            <Route path="/education" element={<EducationPage isAuthenticated={isAuthenticated} />}></Route>
+            <Route path="/education" element={<EducationPage />}></Route>
             <Route path="/HeroMsg" element={<HeroMsg />}></Route>
             <Route path="/Resources" element={<Resources />}></Route>
+
           </Routes>
           <Footer />
         </Router>

@@ -7,7 +7,9 @@
           "additionalAuthenticationProviders": [],
           "defaultAuthentication": {
             "apiKeyConfig": {
-              "apiKeyExpirationDays": 7
+              "apiKeyExpirationDate": "2025-02-05T18:11:34.303Z",
+              "apiKeyExpirationDays": 365,
+              "description": "safesportuserkey"
             },
             "authenticationType": "API_KEY"
           }

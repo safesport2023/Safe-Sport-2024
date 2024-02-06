@@ -4,14 +4,21 @@ import React, { useRef, useState } from 'react';
 import { InView } from 'react-intersection-observer';
 
 
+//english video import
 
+const videoDamianEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Warner_V3_SRT_English.mp4';
+const videoFinlayEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Knox_V3_SRT_English.mp4';
+const videoMarissaEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Papaconstantinou_V3_SRT_English.mp4';
+const videoJavierEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Acevedo_V3_SRT_English.mp4';
+const videoEllaEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Jansen_V3_SRT_English.mp4';
 
-const videoDamianNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Warner_V3_SRT_English.mp4';
-const videoFinlayNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Knox_V3_SRT_English.mp4';
-const videoMarissaNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Papaconstantinou_V3_SRT_English.mp4';
-const videoJavierNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Acevedo_V3_SRT_English.mp4';
-const videoEllaNoCapEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Jansen_V3_SRT_English.mp4';
+//french video import
 
+const videoDamianFrench = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Warner_V3_SRT_French.mp4';
+const videoFinlayFrench = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Knox_V3_SRT_French.mp4';
+const videoMarissaFrench = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Papaconstantinou_V3_SRT_French.mp4';
+const videoJavierFrench = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Acevedo_V3_SRT_French.mp4';
+const videoEllaFrench = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Jansen_V3_SRT_French.mp4';
 
 
 

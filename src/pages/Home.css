@@ -23,21 +23,8 @@ li {
     padding-bottom: 200px;
 }
 
-.signOut-btn {
-    background-color: #FF3131 !important;
-    color: whitesmoke;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
 
-}
 
-.signOut-btn:hover {
-    background-color: #e68a00;
-}
 
 .education-page {
     /* height: 900px !important; */

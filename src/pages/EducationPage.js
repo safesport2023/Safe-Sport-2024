@@ -109,7 +109,7 @@ const EducationPage = () => {
                                 Render videos based on selected language 
                             </div> */}
                             <div className='lang-button-div'>
-                                <button className='signOut-btn' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
+                                <button className=' mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
                             </div>
                             <div className="video-container">
 

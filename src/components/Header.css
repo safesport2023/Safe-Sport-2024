@@ -8,13 +8,50 @@
 
 }
 
+@media (max-width: 768px) {
+  .logo {
+    /* Hide desktop menu on smaller screens */
+    /* display: none; */
+    max-width: 250px;
+    margin-top: 15px;
+
+
+  }
+
+
+  .header {
+    min-height: 100px;
+  }
+
+
+}
+
 .logo {
   max-height: 100px;
+
 }
 
 .logo-div {
   display: flex;
   justify-content: center;
+
+
+}
+
+@media (max-width: 425px) {
+  .logo {
+    /* Hide desktop menu on smaller screens */
+    /* display: none; */
+    max-width: 250px;
+    margin-top: 15px;
+    margin-left: -145px;
+
+  }
+
+
+  .header {
+    min-height: 100px;
+  }
 
 
 }

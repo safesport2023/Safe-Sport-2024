@@ -2,24 +2,13 @@
     padding: 20px;
 }
 
-.signOut-btn {
-    background-color: #ff3131;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all.2s ease-in-out;
-}
+
 
 .Athlete-message {
     padding-top: 10px;
 }
 
-.signOut-btn:hover {
-    background-color: #e68a00;
-}
+
 
 .premium-page {}
 

@@ -69,7 +69,7 @@
   padding-right: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .content-mobile {
     display: none;
     /* Hide desktop menu on smaller screens */

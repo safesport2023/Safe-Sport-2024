@@ -78,18 +78,9 @@ a {
 
 }
 
-.lang-button-div {
-  position: absolute;
-  top: 26px;
-  right: 24px;
-  transition: all.2s ease-in-out;
-}
 
-.lang-button-div:hover {
-  position: absolute;
 
-  transform: scale(1.15);
-}
+
 
 .custom-links {
   text-decoration: none;
@@ -155,6 +146,41 @@ footer {
   color: white;
 }
 
+.lang-button-div {
+  position: absolute;
+  background-color: #FF3131 !important;
+  color: whitesmoke;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  top: 18px;
+  right: 18px;
+  transition: all.2s ease-in-out;
+  font-size: 16px;
+  cursor: pointer !important;
+
+}
+
+.lang-button-div:hover {
+  position: absolute;
+
+  transform: scale(1.15);
+}
+
+.signOut-btn {
+  position: absolute;
+  background-color: #FF3131 !important;
+  color: whitesmoke;
+  border: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+
+}
+
+
 @media screen and (max-width: 768px) {
   .default-div {
     max-width: 600px;
@@ -190,6 +216,34 @@ footer {
     text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.8);
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .lang-button-div {
+    position: absolute;
+    background-color: #FF3131 !important;
+    color: whitesmoke;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    top: 40px;
+    right: 18px;
+    transition: all.2s ease-in-out;
+    font-size: 16px;
+    scale: .75;
+
+  }
+
+  .signOut-btn {
+    position: absolute;
+    background-color: #FF3131 !important;
+    color: whitesmoke;
+    border: none;
+
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    scale: .75;
+
   }
 
 }
@@ -229,6 +283,27 @@ footer {
     text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.8);
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .lang-button-div {
+    position: absolute;
+    left: 120px;
+    transition: all.2s ease-in-out;
+
+  }
+
+  .signOut-btn {
+
+    background-color: #FF3131 !important;
+    color: whitesmoke;
+    border: none;
+    margin-left: -30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* scale: .75; */
+    scale: 2.75;
+    z-index: 200;
   }
 
 }

@@ -54,12 +54,14 @@ body {
 
 .footer-contact {
   text-align: right;
+  padding-top: 25px;
 }
 
 /* Optional: Style the contact info */
 .footer-contact p {
-  margin-bottom: -15px;
+  margin: 0;
   padding-right: 25px;
+
 }
 
 .footer-logos a {
@@ -115,7 +117,7 @@ body {
   }
 
   .footer-contact p {
-    margin-bottom: -15px;
+    margin: 0;
     padding-bottom: 0px;
   }
 
@@ -161,7 +163,7 @@ body {
   }
 
   .footer-contact p {
-    margin-bottom: -15px;
+    margin: 0;
     padding-right: 0px;
   }
 

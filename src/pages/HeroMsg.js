@@ -6,23 +6,55 @@ import { InView } from 'react-intersection-observer';
 
 //english video import
 
-const videoDamianEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Warner_V3_SRT_English.mp4';
-const videoFinlayEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Knox_V3_SRT_English.mp4';
-const videoMarissaEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Papaconstantinou_V3_SRT_English.mp4';
-const videoJavierEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Acevedo_V3_SRT_English.mp4';
-const videoEllaEnglish = 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Jansen_V3_SRT_English.mp4';
 
-//french video import
 
-const videoDamianFrench = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Warner_V3_SRT_French.mp4';
-const videoFinlayFrench = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Knox_V3_SRT_French.mp4';
-const videoMarissaFrench = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Papaconstantinou_V3_SRT_French.mp4';
-const videoJavierFrench = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Acevedo_V3_SRT_French.mp4';
-const videoEllaFrench = 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Jansen_V3_SRT_French.mp4';
+
+
+
 
 
 
 const HeroMsg = () => {
+    //language handler 
+    const [language, setLanguage] = useState('english'); // Default language is English
+
+
+    // Define video URLs based on the selected language
+
+    const toggleLanguage = () => {
+        // Toggle between English and French
+        setLanguage(prevLanguage => prevLanguage === 'english' ? 'french' : 'english');
+        console.log('Language:', language);
+    };
+
+    const englishVideos = {
+
+        damian: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Warner_V3_SRT_English.mp4',
+        finlay: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Knox_V3_SRT_English.mp4',
+        marissa: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Papaconstantinou_V3_SRT_English.mp4',
+        javier: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Acevedo_V3_SRT_English.mp4',
+        ella: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Jansen_V3_SRT_English.mp4'
+
+        // Include other English video URLs here...
+    };
+    const frenchVideos = {
+
+        damian: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Warner_V3_SRT_French.mp4',
+        finlay: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Knox_V3_SRT_French.mp4',
+        marissa: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Papaconstantinou_V3_SRT_French.mp4',
+        javier: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Acevedo_V3_SRT_French.mp4',
+        ella: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Jansen_V3_SRT_French.mp4'
+
+        // Include other French video URLs here...
+    };
+
+
+    //this switches the videos from englisht to french
+    const videoUrls = language === 'english' ? englishVideos : frenchVideos;
+    console.log('Video URLs:', videoUrls);
+
+
+    ///////////////////////////////////////////////////////////////////
     const videoRefs = {
         damian: useRef(null),
         finlay: useRef(null),
@@ -32,26 +64,16 @@ const HeroMsg = () => {
         // Add refs for other videos as needed
     };
 
-    const [currentVideo, setCurrentVideo] = useState(null);
 
-    const handlePlay = (videoName) => {
-        // Pause the currently playing video
-        if (currentVideo && currentVideo !== videoName) {
-            videoRefs[currentVideo].current.pause();
-        }
-
-        // Play the selected video
-        videoRefs[videoName].current.play();
-
-        // Update the current video state
-        setCurrentVideo(videoName);
-    };
 
     return (
         <InView>
             <div className='messages-page'>
                 <div className='page-title-div'>
                     <h1 className='page-title'>Hear from your Heroes</h1>
+                </div>
+                <div className='lang-button-div'>
+                    <button className='signOut-btn' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
                 </div>
                 <div className='welcome-statement default-div'>
                     <p className='Athlete-message'>
@@ -65,13 +87,13 @@ const HeroMsg = () => {
                         <div className="video-Container">
                             <video
                                 id='HFYHVideo'
-                                ref={videoRefs.damian}
+                                key={language}
                                 width="750"
                                 height="500"
                                 controls
-                                onPlay={() => handlePlay('damian')}
+
                             >
-                                <source src={videoDamianEnglish} type="video/mp4" />
+                                <source src={language === 'english' ? videoUrls.damian : videoUrls.damian} type="video/mp4" />
                             </video>
 
                         </div>
@@ -83,13 +105,13 @@ const HeroMsg = () => {
                         <div className="video-Container">
                             <video
                                 id='HFYHVideo'
-                                ref={videoRefs.marissa}
+                                key={language}
                                 width="750"
                                 height="500"
                                 controls
-                                onPlay={() => handlePlay('marrissa')}
+
                             >
-                                <source src={videoMarissaEnglish} type="video/mp4" />
+                                <source src={language === 'english' ? videoUrls.marissa : videoUrls.marissa} type="video/mp4" />
                             </video>
 
                         </div>
@@ -100,13 +122,14 @@ const HeroMsg = () => {
                         <div className="video-Container">
                             <video
                                 id='HFYHVideo'
-                                ref={videoRefs.finlay}
+                                key={language}
                                 width="750"
                                 height="500"
                                 controls
-                                onPlay={() => handlePlay('finlay')}
+
                             >
-                                <source src={videoFinlayEnglish} type="video/mp4" />
+
+                                <source src={language === 'english' ? videoUrls.finlay : videoUrls.finlay} type="video/mp4" />
                             </video>
                         </div>
                     </div>
@@ -116,13 +139,13 @@ const HeroMsg = () => {
                         <div className="video-Container">
                             <video
                                 id='HFYHVideo'
-                                ref={videoRefs.javier}
+                                key={language}
                                 width="750"
                                 height="500"
                                 controls
-                                onPlay={() => handlePlay('javier')}
+
                             >
-                                <source src={videoJavierEnglish} type="video/mp4" />
+                                <source src={language === 'english' ? videoUrls.javier : videoUrls.javier} type="video/mp4" />
                             </video>
                         </div>
                     </div>
@@ -133,13 +156,13 @@ const HeroMsg = () => {
                         <div className="video-Container">
                             <video
                                 id='HFYHVideo'
-                                ref={videoRefs.ella}
+                                key={language}
                                 width="750"
                                 height="500"
                                 controls
-                                onPlay={() => handlePlay('ella')}
+                            // onPlay={() => handlePlay('ella')}
                             >
-                                <source src={videoEllaEnglish} type="video/mp4" />
+                                <source src={language === 'english' ? videoUrls.ella : videoUrls.ella} type="video/mp4" />
                             </video>
                         </div>
                     </div>
@@ -147,7 +170,7 @@ const HeroMsg = () => {
 
                 </div>
             </div>
-        </InView>
+        </InView >
     );
 };
 

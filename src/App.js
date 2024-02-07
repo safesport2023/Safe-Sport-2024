@@ -17,6 +17,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 Amplify.configure(awsExports);
 
+
+
+
 function App() {
 
   // State to manage the visibility of the mobile menu
@@ -28,9 +31,12 @@ function App() {
   };
 
 
+
+
   return (
     <div className="App">
       <div className='background-div'>
+
         <Router>
           <Header />
           <div className="content-desktop">

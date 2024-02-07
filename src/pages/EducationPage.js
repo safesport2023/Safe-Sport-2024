@@ -103,10 +103,13 @@ const EducationPage = () => {
                                 </button>
                             </div>
 
-                            <div className='default-div'>
-                                {/* Button to toggle language */}
+                            {/* <div className='default-div'>
+                                 Button to toggle language 
                                 <button onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
-                                {/* Render videos based on selected language */}
+                                Render videos based on selected language 
+                            </div> */}
+                            <div className='lang-button-div'>
+                                <button className='signOut-btn' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
                             </div>
                             <div className="video-container">
 
@@ -140,7 +143,7 @@ const EducationPage = () => {
                                         className="video-player"
                                     >
 
-                                        <source src={language === 'english' ? videoUrls.intro : videoUrls.bullying} type="video/mp4" />
+                                        <source src={language === 'english' ? videoUrls.bullying : videoUrls.bullying} type="video/mp4" />
                                     </video>
                                     {videoStatus[1].unlocked ? null : <div className="lock-overlay"></div>}
                                 </div>
@@ -159,7 +162,7 @@ const EducationPage = () => {
                                         className="video-player"
                                     >
 
-                                        <source src={language === 'english' ? videoUrls.intro : videoUrls.hazing} type="video/mp4" />
+                                        <source src={language === 'english' ? videoUrls.hazing : videoUrls.hazing} type="video/mp4" />
                                     </video>
                                     {videoStatus[2].unlocked ? null : <div className="lock-overlay"></div>}
                                 </div>
@@ -179,7 +182,7 @@ const EducationPage = () => {
                                         className="video-player"
                                     >
 
-                                        <source src={language === 'english' ? videoUrls.intro : videoUrls.boundaries} type="video/mp4" />
+                                        <source src={language === 'english' ? videoUrls.boundaries : videoUrls.boundaries} type="video/mp4" />
                                     </video>
                                     {videoStatus[3].unlocked ? null : <div className="lock-overlay"></div>}
                                 </div>
@@ -200,7 +203,7 @@ const EducationPage = () => {
                                         className="video-player"
                                     >
 
-                                        <source src={language === 'english' ? videoUrls.intro : videoUrls.grooming} type="video/mp4" />
+                                        <source src={language === 'english' ? videoUrls.grooming : videoUrls.grooming} type="video/mp4" />
                                     </video>
                                     {videoStatus[4].unlocked ? null : <div className="lock-overlay"></div>}
                                 </div>
@@ -220,7 +223,7 @@ const EducationPage = () => {
                                         onEnded={() => handleVideoEnded(5)}
                                         className="video-player"
                                     >
-                                        <source src={language === 'english' ? videoUrls.intro : videoUrls.discrimination} type="video/mp4" />
+                                        <source src={language === 'english' ? videoUrls.discrimination : videoUrls.discrimination} type="video/mp4" />
                                     </video>
                                     {videoStatus[5].unlocked ? null : <div className="lock-overlay"></div>}
                                 </div>
@@ -240,7 +243,7 @@ const EducationPage = () => {
                                         onEnded={() => handleVideoEnded(6)}
                                         className="video-player"
                                     >
-                                        <source src={language === 'english' ? videoUrls.intro : videoUrls.neglect} type="video/mp4" />
+                                        <source src={language === 'english' ? videoUrls.neglect : videoUrls.neglect} type="video/mp4" />
                                     </video>
                                     {videoStatus[6].unlocked ? null : <div className="lock-overlay"></div>}
                                 </div>
@@ -259,7 +262,7 @@ const EducationPage = () => {
                                         onEnded={() => handleVideoEnded(7)}
                                         className="video-player"
                                     >
-                                        <source src={language === 'english' ? videoUrls.intro : videoUrls.report} type="video/mp4" />
+                                        <source src={language === 'english' ? videoUrls.report : videoUrls.report} type="video/mp4" />
                                     </video>
                                     {videoStatus[7].unlocked ? null : <div className="lock-overlay"></div>}
                                 </div>

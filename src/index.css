@@ -78,6 +78,19 @@ a {
 
 }
 
+.lang-button-div {
+  position: absolute;
+  top: 26px;
+  right: 24px;
+  transition: all.2s ease-in-out;
+}
+
+.lang-button-div:hover {
+  position: absolute;
+
+  transform: scale(1.15);
+}
+
 .custom-links {
   text-decoration: none;
   color: rgb(155, 56, 56);

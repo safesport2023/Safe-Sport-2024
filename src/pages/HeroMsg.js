@@ -28,7 +28,7 @@ const HeroMsg = () => {
         finlay: useRef(null),
         ella: useRef(null),
         javier: useRef(null),
-        marrissa: useRef(null)
+        marissa: useRef(null)
         // Add refs for other videos as needed
     };
 
@@ -71,7 +71,7 @@ const HeroMsg = () => {
                                 controls
                                 onPlay={() => handlePlay('damian')}
                             >
-                                <source src={videoDamianNoCapEnglish} type="video/mp4" />
+                                <source src={videoDamianEnglish} type="video/mp4" />
                             </video>
 
                         </div>
@@ -83,13 +83,13 @@ const HeroMsg = () => {
                         <div className="video-Container">
                             <video
                                 id='HFYHVideo'
-                                ref={videoRefs.marrissa}
+                                ref={videoRefs.marissa}
                                 width="750"
                                 height="500"
                                 controls
                                 onPlay={() => handlePlay('marrissa')}
                             >
-                                <source src={videoMarissaNoCapEnglish} type="video/mp4" />
+                                <source src={videoMarissaEnglish} type="video/mp4" />
                             </video>
 
                         </div>
@@ -106,7 +106,7 @@ const HeroMsg = () => {
                                 controls
                                 onPlay={() => handlePlay('finlay')}
                             >
-                                <source src={videoFinlayNoCapEnglish} type="video/mp4" />
+                                <source src={videoFinlayEnglish} type="video/mp4" />
                             </video>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ const HeroMsg = () => {
                                 controls
                                 onPlay={() => handlePlay('javier')}
                             >
-                                <source src={videoJavierNoCapEnglish} type="video/mp4" />
+                                <source src={videoJavierEnglish} type="video/mp4" />
                             </video>
                         </div>
                     </div>
@@ -139,7 +139,7 @@ const HeroMsg = () => {
                                 controls
                                 onPlay={() => handlePlay('ella')}
                             >
-                                <source src={videoEllaNoCapEnglish} type="video/mp4" />
+                                <source src={videoEllaEnglish} type="video/mp4" />
                             </video>
                         </div>
                     </div>

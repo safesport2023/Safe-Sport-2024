@@ -13,6 +13,10 @@
     transition: background-color 0.3s ease;
 }
 
+.Athlete-message {
+    padding-top: 10px;
+}
+
 .signOut-btn:hover {
     background-color: #e68a00;
 }
@@ -60,6 +64,8 @@
 
 .Header-hero {
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
     /* font-size: 32px !important; */
 }
 

@@ -2,13 +2,59 @@ import './Home.css';
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import './EducationPages.css';
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
 
 // const localVideoPath = '../../public/assets/placeholder1.mp4';
 const Home = () => {
+
+
+
+    //language handler 
+    const [language, setLanguage] = useState('english'); // Default language is English
+
+
+    // Define video URLs based on the selected language
+
+    const toggleLanguage = () => {
+        // Toggle between English and French
+        setLanguage(prevLanguage => prevLanguage === 'english' ? 'french' : 'english');
+        console.log('Language:', language);
+    };
+
+
+    const englishVideos = {
+
+        intro: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_00_Intro_V6_SRT_English.mp4',
+        bullying: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_01_Bullying_V6_SRT_English.mp4',
+        hazing: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_02_Hazing_V6_SRT_English.mp4',
+        boundaries: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_03_Boundery Transgression_V6_SRT_English.mp4',
+        grooming: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_04_Grooming_V6_SRT_English.mp4',
+        discrimination: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_05_Discrimination_V6_SRT_English.mp4',
+        neglect: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_06_Neglect_V6_SRT_English.mp4',
+        report: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_07_Report_V6_SRT_English.mp4',
+        // Include other English video URLs here...
+    };
+    const frenchVideos = {
+        intro: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_00_Intro_V6_SRT_French.mp4',
+        bullying: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_01_Bullying_V6_SRT_French.mp4',
+        hazing: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_02_Hazing_V6_SRT_French.mp4',
+        boundaries: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_03_Boundery Transgression_V6_SRT_French.mp4',
+        grooming: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_04_Grooming_V6_SRT_French.mp4',
+        discrimination: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_05_Discrimination_V6_SRT_French.mp4',
+        neglect: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_06_Neglect_V6_SRT_French.mp4',
+        report: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_07_Report_V6_SRT_French.mp4',
+        // Include other French video URLs here...
+    };
+    //this switches the videos from englisht to french
+    const videoUrls = language === 'english' ? englishVideos : frenchVideos;
+    console.log('Video URLs:', videoUrls);
+
+
+
+
     return (
         <div className='home-page'>
             <div className='page-title-div'>
@@ -33,6 +79,9 @@ const Home = () => {
                     </div>
                 )}
             </Authenticator>
+            <div className='lang-button-div'>
+                <button className='mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
+            </div>
             <div className='welcome-statement default-div'>
                 <p>Welcome to Safe Sport Education for Youth! This educational program will provide you with all the tools you need to have a safe and positive sports experience. Safe Sport Education for Youth is brought to you by the National Sports Organizations representing athletics, volleyball, and swimming. These videos are short and all you need to do is watch them. Easy right? Check out the videos and be a part of our new movement called Safe Sport.
                     <br></br>

@@ -60,25 +60,34 @@ const Home = () => {
             <div className='page-title-div'>
                 <h1 className='page-title'>Welcome to Safe Sport <br></br> Education for Youth</h1>
             </div>
-            <Authenticator className='auth-block' onAuthStateChange={(authState) => {
-                if (authState === 'signedIn') {
-                    // User just signed in
-                    console.log('User signed in', authState.user);
-                }
-            }}>
+            <Authenticator
+
+                signUpAttributes={[
+                    'given_name', // First name
+                    'family_name', // Last name
+                    'custom:sport' // Custom attribute for sport selection
+                ]}
+                onAuthStateChange={(authState) => {
+                    if (authState === 'signedIn') {
+                        // User just signed in
+                        console.log('User signed in', authState.user);
+                    }
+                }}
+            >
+
                 {({ signOut, user }) => (
-                    <div className='other'>
-                        <div className='logout-btn'>
 
-
-                            <button className='signOut-btn' onClick={signOut}>Sign Out</button>
-                        </div>
-
-
-
+                    <div className="logout-btn">
+                        <button className="signOut-btn" onClick={signOut}>
+                            Sign Out
+                        </button>
                     </div>
+
+
                 )}
+
             </Authenticator>
+
             <div className='lang-button-div'>
                 <button className='mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
             </div>

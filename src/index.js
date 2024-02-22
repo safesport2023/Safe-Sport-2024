@@ -6,7 +6,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Amplify } from 'aws-amplify';
-import config from './aws-exports';
+import amplifyconfig from './amplifyconfiguration.json';
+Amplify.configure(amplifyconfig);
+
 
 // import Footer from './components/Footer';
 
@@ -16,7 +18,7 @@ import config from './aws-exports';
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@100;700&display=swap"></link>
 
-Amplify.configure(config);
+
 
 
 

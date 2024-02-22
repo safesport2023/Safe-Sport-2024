@@ -9,7 +9,7 @@ import * as React from "react";
 import { Button, Flex, Grid, TextField } from "@aws-amplify/ui-react";
 import { fetchByPath, getOverrideProps, validateField } from "./utils";
 import { API } from "aws-amplify";
-import { createTodo } from "../../mutations";
+import { createTodo } from "../graphql/mutations";
 export default function TodoCreateForm(props) {
   const {
     clearOnSuccess = true,

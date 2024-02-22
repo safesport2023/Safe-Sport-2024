@@ -20,8 +20,22 @@ li {
 }
 
 .video-Container {
-    padding-bottom: 200px;
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 80px; */
+    /* justify-content: center; */
+    max-width: 940px !important;
+    position: relative;
+    z-index: 1;
+
+
 }
+
+.video-Container video {
+    border-radius: 5px;
+}
+
 
 
 

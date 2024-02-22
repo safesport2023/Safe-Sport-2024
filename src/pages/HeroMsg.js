@@ -33,7 +33,8 @@ const HeroMsg = () => {
         finlay: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Knox_V3_SRT_English.mp4',
         marissa: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Papaconstantinou_V3_SRT_English.mp4',
         javier: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Acevedo_V3_SRT_English.mp4',
-        ella: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Jansen_V3_SRT_English.mp4'
+        ella: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Jansen_V3_SRT_English.mp4',
+        marie: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Marie-Alex-Belanger-English.mp4'
 
         // Include other English video URLs here...
     };
@@ -43,7 +44,8 @@ const HeroMsg = () => {
         finlay: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Knox_V3_SRT_French.mp4',
         marissa: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Papaconstantinou_V3_SRT_French.mp4',
         javier: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Acevedo_V3_SRT_French.mp4',
-        ella: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Jansen_V3_SRT_French.mp4'
+        ella: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Jansen_V3_SRT_French.mp4',
+        marie: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Marie-Alex-Belanger-French.mp4'
 
         // Include other French video URLs here...
     };
@@ -163,6 +165,31 @@ const HeroMsg = () => {
                             // onPlay={() => handlePlay('ella')}
                             >
                                 <source src={language === 'english' ? videoUrls.ella : videoUrls.ella} type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <div className='content-section'>
+                        <h2 className='Header-hero'> Marie-Alex Bélanger, </h2>
+                        <p className='Athlete-message'> Volleyball athlete Marie-Alex Bélanger, originally from Saint-Alphonse-Rodriguez, Quebec, started her volleyball career in indoor court and switched to beach volleyball later in her career. She
+                            competed for the Université de Montreal Carabins for five years and was part of their 2015 National
+                            Championship bronze medal team. Marie-Alex earned the Mary Lyons Award for U Sports Women's
+                            VOleyball Player of the Year and the U Sports Female athlete of the year in 2018. Bélanger was a
+                            member of the Canadian women's national volleyball team, participating in the 2017 FIVB Volleyball
+                            World Grand Prix and the 2018 FIVB Volleyball Women's World Championship. After competing for
+                            several European professional volleyball teams, Bélanger began focusing on beach volleyball, reaching
+                            the podium in 20222 and 2023 on the NORCECA (North, Central America and Caribbean Volleyball
+                            Confederation) circuit.
+                        </p>
+                        <div className="video-Container">
+                            <video
+                                id='HFYHVideo'
+                                key={language}
+                                width="750"
+                                height="500"
+                                controls
+                            // onPlay={() => handlePlay('ella')}
+                            >
+                                <source src={language === 'english' ? videoUrls.marie : videoUrls.marie} type="video/mp4" />
                             </video>
                         </div>
                     </div>

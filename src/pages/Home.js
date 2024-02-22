@@ -27,25 +27,13 @@ const Home = () => {
 
     const englishVideos = {
 
-        intro: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_00_Intro_V6_SRT_English.mp4',
-        bullying: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_01_Bullying_V6_SRT_English.mp4',
-        hazing: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_02_Hazing_V6_SRT_English.mp4',
-        boundaries: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_03_Boundery Transgression_V6_SRT_English.mp4',
-        grooming: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_04_Grooming_V6_SRT_English.mp4',
-        discrimination: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_05_Discrimination_V6_SRT_English.mp4',
-        neglect: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_06_Neglect_V6_SRT_English.mp4',
-        report: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/Education_Course_07_Report_V6_SRT_English.mp4',
+        promo: 'https://dqdi1yce51qjt.cloudfront.net/english-with-caption/main-promo-eng.mp4'
+
         // Include other English video URLs here...
     };
     const frenchVideos = {
-        intro: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_00_Intro_V6_SRT_French.mp4',
-        bullying: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_01_Bullying_V6_SRT_French.mp4',
-        hazing: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_02_Hazing_V6_SRT_French.mp4',
-        boundaries: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_03_Boundery Transgression_V6_SRT_French.mp4',
-        grooming: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_04_Grooming_V6_SRT_French.mp4',
-        discrimination: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_05_Discrimination_V6_SRT_French.mp4',
-        neglect: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_06_Neglect_V6_SRT_French.mp4',
-        report: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/Education_Course_07_Report_V6_SRT_French.mp4',
+        promo: 'https://dqdi1yce51qjt.cloudfront.net/french-with-caption/main-promo-french.mp4'
+
         // Include other French video URLs here...
     };
     //this switches the videos from englisht to french
@@ -61,35 +49,44 @@ const Home = () => {
                 <h1 className='page-title'>Welcome to Safe Sport <br></br> Education for Youth</h1>
             </div>
             <Authenticator
-
                 signUpAttributes={[
                     'given_name', // First name
                     'family_name', // Last name
                     'custom:sport' // Custom attribute for sport selection
                 ]}
-                onAuthStateChange={(authState) => {
-                    if (authState === 'signedIn') {
+                onAuthStateChange={(authState, authData) => {
+                    if (authState === 'signedIn' && authData) {
                         // User just signed in
-                        console.log('User signed in', authState.user);
+                        console.log('test       test        test')
+                        console.log('User signed in:', authData.attributes.given_name, authData.attributes.family_name);
                     }
                 }}
             >
-
                 {({ signOut, user }) => (
-
                     <div className="logout-btn">
                         <button className="signOut-btn" onClick={signOut}>
                             Sign Out
                         </button>
                     </div>
-
-
                 )}
-
             </Authenticator>
+
 
             <div className='lang-button-div'>
                 <button className='mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
+            </div>
+            <div className="video-Container" >
+                <video
+                    id='HFYHVideo'
+                    key={language}
+                    width="800px"
+                    height="auto"
+                    controls
+
+                >
+                    <source src={language === 'english' ? videoUrls.promo : videoUrls.promo} type="video/mp4" />
+                </video>
+
             </div>
             <div className='welcome-statement default-div'>
                 <p>Welcome to Safe Sport Education for Youth! This educational program will provide you with all the tools you need to have a safe and positive sports experience. Safe Sport Education for Youth is brought to you by the National Sports Organizations representing athletics, volleyball, and swimming. These videos are short and all you need to do is watch them. Easy right? Check out the videos and be a part of our new movement called Safe Sport.

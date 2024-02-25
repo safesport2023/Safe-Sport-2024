@@ -2,8 +2,12 @@ import './Home.css';
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import './EducationPages.css';
-import React, { useRef, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Auth } from 'aws-amplify';
+
+
+
 
 
 
@@ -12,8 +16,26 @@ const Home = () => {
 
 
 
+
+
     //language handler 
-    const [language, setLanguage] = useState('english'); // Default language is English
+    const [language, setLanguage] = useState('english');
+    const [userEmail, setUserEmail] = useState(null);
+
+    useEffect(() => {
+        checkUser();
+    }, []);
+
+    const checkUser = async () => {
+        try {
+            const user = await Auth.currentAuthenticatedUser();
+            // set user state and show alert 
+            setUserEmail(user.attributes.email); // Update userEmail state with user email
+            console.log('Logged in user email:', userEmail);
+        } catch (error) {
+            console.log('Error getting current user', error);
+        }
+    };
 
 
     // Define video URLs based on the selected language
@@ -49,18 +71,7 @@ const Home = () => {
                 <h1 className='page-title'>Welcome to Safe Sport <br></br> Education for Youth</h1>
             </div>
             <Authenticator
-                signUpAttributes={[
-                    'given_name', // First name
-                    'family_name', // Last name
-                    'custom:sport' // Custom attribute for sport selection
-                ]}
-                onAuthStateChange={(authState, authData) => {
-                    if (authState === 'signedIn' && authData) {
-                        // User just signed in
-                        console.log('test       test        test')
-                        console.log('User signed in:', authData.attributes.given_name, authData.attributes.family_name);
-                    }
-                }}
+
             >
                 {({ signOut, user }) => (
                     <div className="logout-btn">
@@ -75,6 +86,11 @@ const Home = () => {
             <div className='lang-button-div'>
                 <button className='mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
             </div>
+            {userEmail ? (
+                <div className="user-email-container">
+                    <p>Your email: {userEmail}</p>
+                </div>
+            ) : null}
             <div className="video-Container" >
                 <video
                     id='HFYHVideo'
@@ -127,5 +143,7 @@ const Home = () => {
         </div>
     );
 };
+
+
 
 export default Home;

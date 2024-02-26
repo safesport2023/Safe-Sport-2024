@@ -62,6 +62,23 @@ const Home = () => {
     const videoUrls = language === 'english' ? englishVideos : frenchVideos;
     console.log('Video URLs:', videoUrls);
 
+    const signUpConfig = {
+        signUpFields: [
+            {
+                label: 'Custom Attribute 1',
+                key: 'customAttribute1',
+                required: true,
+                type: 'string', // Adjust the type based on your attribute
+            },
+            {
+                label: 'Custom Attribute 2',
+                key: 'customAttribute2',
+                required: true,
+                type: 'string', // Adjust the type based on your attribute
+            },
+        ],
+    };
+
 
 
 
@@ -70,18 +87,14 @@ const Home = () => {
             <div className='page-title-div'>
                 <h1 className='page-title'>Welcome to Safe Sport <br></br> Education for Youth</h1>
             </div>
-            <Authenticator
 
-            >
+            <Authenticator hideDefault={true}>
                 {({ signOut, user }) => (
                     <div className="logout-btn">
-                        <button className="signOut-btn" onClick={signOut}>
-                            Sign Out
-                        </button>
+                        <button className="signOut-btn" onClick={signOut}>Sign Out</button>
                     </div>
                 )}
             </Authenticator>
-
 
             <div className='lang-button-div'>
                 <button className='mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>

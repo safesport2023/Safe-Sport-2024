@@ -17,5 +17,47 @@
       "service": "AppSync"
     }
   },
-  "auth": {}
+  "auth": {
+    "safesport2024a60dfb99": {
+      "customAuth": false,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "serviceType": "imported"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_auth_safesport2024a60dfb99_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "safesport2024a60dfb99"
+        }
+      ]
+    },
+    "AMPLIFY_auth_safesport2024a60dfb99_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "safesport2024a60dfb99"
+        }
+      ]
+    },
+    "AMPLIFY_auth_safesport2024a60dfb99_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "safesport2024a60dfb99"
+        }
+      ]
+    },
+    "AMPLIFY_auth_safesport2024a60dfb99_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "safesport2024a60dfb99"
+        }
+      ]
+    }
+  }
 }

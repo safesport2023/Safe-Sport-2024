@@ -1,0 +1,25 @@
+{
+  "authSelections": "userPoolOnly",
+  "resourceName": "safesport2024a60dfb99",
+  "serviceType": "imported",
+  "region": "us-east-1",
+  "usernameAttributes": [
+    "email"
+  ],
+  "requiredAttributes": [
+    "email",
+    "given_name",
+    "family_name"
+  ],
+  "passwordPolicyMinLength": 8,
+  "passwordPolicyCharacters": [
+    "Requires Lowercase",
+    "Requires Uppercase",
+    "Requires Numbers"
+  ],
+  "mfaConfiguration": "OFF",
+  "autoVerifiedAttributes": [
+    "email"
+  ],
+  "mfaTypes": []
+}

@@ -14,6 +14,14 @@
     "categories": {
       "api": {
         "safesport2024": {}
+      },
+      "auth": {
+        "safesport2024a60dfb99": {
+          "userPoolId": "us-east-1_1zyODFtlr",
+          "userPoolName": "SafeSportUsers",
+          "webClientId": "224isoa48jqgj34ht1m38jq5dd",
+          "nativeClientId": "224isoa48jqgj34ht1m38jq5dd"
+        }
       }
     }
   }

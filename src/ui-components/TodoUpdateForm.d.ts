@@ -6,7 +6,6 @@
 
 import * as React from "react";
 import { GridProps, TextFieldProps } from "@aws-amplify/ui-react";
-import { Todo } from "../API.ts";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -40,7 +39,7 @@ export declare type TodoUpdateFormProps = React.PropsWithChildren<{
     overrides?: TodoUpdateFormOverridesProps | undefined | null;
 } & {
     id?: string;
-    todo?: Todo;
+    todo?: any;
     onSubmit?: (fields: TodoUpdateFormInputValues) => TodoUpdateFormInputValues;
     onSuccess?: (fields: TodoUpdateFormInputValues) => void;
     onError?: (fields: TodoUpdateFormInputValues, errorMessage: string) => void;

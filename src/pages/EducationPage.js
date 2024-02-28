@@ -7,6 +7,10 @@ import { Amplify } from 'aws-amplify';
 import awsconfig from '../aws-exports';
 import { InView } from 'react-intersection-observer';
 
+/**
+ * Authenticator component from AWS Amplify UI React library
+ * Used to add authentication flows to application
+*/
 
 
 

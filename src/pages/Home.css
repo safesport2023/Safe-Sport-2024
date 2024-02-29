@@ -130,7 +130,10 @@ li {
 
 }
 
-
+.home-page-authenticator {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
 
 .data-amplify-authenticator {}
 

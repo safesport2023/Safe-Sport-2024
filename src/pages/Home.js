@@ -88,7 +88,7 @@ const Home = () => {
                 <h1 className='page-title'>Welcome to Safe Sport <br></br> Education for Youth</h1>
             </div>
 
-            <Authenticator hideDefault={true}>
+            <Authenticator className='home-page-authenticator' hideDefault={true}>
                 {({ signOut, user }) => (
                     <div className="logout-btn">
                         <button className="signOut-btn" onClick={signOut}>Sign Out</button>

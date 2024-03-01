@@ -302,11 +302,6 @@ const EducationPage = () => {
 
                                 </div>
 
-
-
-
-
-
                                 {/* Repeat the pattern for other videos */}
                             </div>
                         </div>

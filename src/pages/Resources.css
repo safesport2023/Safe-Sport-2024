@@ -181,3 +181,7 @@
     /* Center items vertically */
     gap: 15px;
 }
+
+.AOS-custom {
+    padding-bottom: 10px;
+}

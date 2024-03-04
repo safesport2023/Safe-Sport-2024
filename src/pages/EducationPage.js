@@ -6,6 +6,8 @@ import './EducationPages.css';
 import { Amplify } from 'aws-amplify';
 import awsconfig from '../aws-exports';
 import { InView } from 'react-intersection-observer';
+import { Auth } from 'aws-amplify';
+
 
 /**
  * Authenticator component from AWS Amplify UI React library
@@ -32,6 +34,44 @@ const EducationPage = () => {
 
         ]
     });
+    const [showCongratulationsPopup, setShowCongratulationsPopup] = useState(false);
+
+    // User input state variables
+
+    const [userEmail, setUserEmail] = useState(null);
+    const [userGivenName, setUserGivenName] = useState(null);
+    const [userFamilyName, setUserFamilyName] = useState(null);
+    const [sport, setSport] = useState(null);
+
+    const handleSportChange = (event) => {
+        setSport(event.target.value);
+        console.log('Sport:', sport);
+    };
+
+
+
+    const checkUser = async () => {
+        try {
+            const user = await Auth.currentAuthenticatedUser();
+
+            // set user state and show alert 
+            setUserEmail(user.attributes.email); // Update userEmail state with user email
+            console.log('Logged in user email:', userEmail);
+            setUserGivenName(user.attributes.given_name); // Update userEmail state with user email
+            console.log('Logged in user email:', userGivenName);
+            setUserFamilyName(user.attributes.family_name); // Update userEmail state with user email
+            console.log('Logged in user email:', userFamilyName);
+
+
+        } catch (error) {
+            console.log('Error getting current user', error);
+        }
+    };
+    useEffect(() => {
+        checkUser();
+    },);
+
+
 
     useEffect(() => {
         // Update localStorage whenever videoStatus changes
@@ -39,6 +79,7 @@ const EducationPage = () => {
         const allVideosWatched = videoStatus.every(video => video.watched);
         if (allVideosWatched) {
             console.log('User has watched all the videos!');
+            setShowCongratulationsPopup(true);
         }
     }, [videoStatus]);
 
@@ -115,6 +156,7 @@ const EducationPage = () => {
 
                 </div>
                 <Authenticator className='education-page-authenticator'>
+
                     {({ signOut, user }) => (
                         <div className="education-page1">
                             <div className="logout-btn">
@@ -123,11 +165,7 @@ const EducationPage = () => {
                                 </button>
                             </div>
 
-                            {/* <div className='default-div'>
-                                 Button to toggle language 
-                                <button onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
-                                Render videos based on selected language 
-                            </div> */}
+
                             <div className='lang-button-div'>
                                 <button className=' mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
                             </div>
@@ -302,7 +340,43 @@ const EducationPage = () => {
 
                                 </div>
 
-                                {/* Repeat the pattern for other videos */}
+                                {/* Repeat the pattern for other videos added in the futre */}
+
+
+                                {/* this is the pop up where the user enters the info for the cirtificate */}
+                                {showCongratulationsPopup && (
+                                    <div className="congratulations-popup congrats-div">
+                                        <h2>Congratulations!</h2>
+                                        <br></br>
+                                        <p>You've finished watching all the video modules. Please enter the sport you are associated with and want to appear on your Cirtificate.</p>
+
+
+
+                                        <input
+                                            type="text"
+                                            className="sport-input"
+                                            id="sport"
+                                            maxLength={20}
+                                            placeholder="Enter your sport"
+                                            value={sport} // Access current sport value
+                                            onChange={handleSportChange} // Update sport on change
+                                        />
+
+                                        {/* <button onClick={() => setShowCongratulationsPopup(false)}>Close</button> */}
+                                        <div className='certificate-wrapper'>
+
+                                            <p className='certificate-wrapper-Date'>
+                                                {new Date().toLocaleDateString('en-US')}</p>
+                                            <p className='certificate-wrapper-Name'>{userGivenName}{' '}{userFamilyName}</p>
+                                            <p className='certificate-wrapper-Sport'>{sport}</p>
+                                            <img src={require('../assets/cert/SafeSportCompletionCertificate.png')} alt="Certification" className="certificate" />
+                                        </div>
+                                        <br></br>
+
+
+                                        <button class="btn btn-info" id="downloadPDF">Download as PDF</button>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     )}

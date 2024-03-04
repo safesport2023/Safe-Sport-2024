@@ -1,8 +1,48 @@
 @media (min-width: 768px) {}
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
 
-@media (max-width: 425px) {}
+  .certificate-wrapper {
+    left: -22px;
+    scale: .8;
+  }
+
+  .video-container {
+    width: 100vw;
+  }
+
+  .video-wrapper {
+    width: 100vw;
+  }
+
+  .certificate-wrapper img {}
+}
+
+@media (max-width: 425px) {
+  .certificate-wrapper {
+    left: -105px;
+    scale: .5;
+  }
+
+
+
+  .video-wrapper {
+    margin-bottom: 0px;
+  }
+
+  .titles-container {
+
+    margin-top: 20px;
+  }
+
+  .video-container video {
+    width: 100vw !important;
+  }
+
+  .video-wrapper {
+    width: 100vw !important;
+  }
+}
 
 .logout-btn {
   position: absolute;
@@ -149,4 +189,66 @@
   text-align: left;
   /* Left-align the title */
   /* Remove default margin for the paragraph */
+}
+
+.congrats-div input {
+  font-family: 'Avenir Light', sans-serif;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.certificate-wrapper {
+  position: relative;
+  align-items: center !important;
+}
+
+
+
+.certificate-wrapper-Name {
+  position: absolute;
+  font-family: 'Dancing Script', cursive !important;
+
+
+  top: 270px;
+  font-size: 38px !important;
+  transform: translateX(150%) !important;
+
+}
+
+
+.certificate-wrapper-Sport {
+  position: absolute;
+
+
+  left: 510px;
+  top: 405px;
+  font-size: 25px !important;
+}
+
+.certificate-wrapper-Date {
+  position: absolute;
+
+
+  left: 229px;
+  top: 405px;
+  font-size: 25px !important;
+}
+
+
+.certificate-wrapper img {
+  width: 800px;
+  height: auto;
+}
+
+.btn-info {
+  background-color: rgb(212, 212, 212) !important;
+  border: rgb(148, 66, 66) !important;
+  border-width: 3px !important;
+}
+
+.btn-info :hover {
+  background-color: rgb(255, 61, 61) !important;
+  border: rgb(148, 66, 66) !important;
+  border-width: 3px !important;
 }

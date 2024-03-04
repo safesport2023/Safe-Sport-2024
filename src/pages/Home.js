@@ -95,6 +95,8 @@ const Home = () => {
                         <button className="signOut-btn" onClick={signOut}>Sign Out</button>
                     </div>
                 )}
+
+
             </Authenticator>
 
             <div className='lang-button-div'>

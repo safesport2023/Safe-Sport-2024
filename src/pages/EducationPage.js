@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
@@ -7,6 +7,8 @@ import { Amplify } from 'aws-amplify';
 import awsconfig from '../aws-exports';
 import { InView } from 'react-intersection-observer';
 import { Auth } from 'aws-amplify';
+import * as htmlToImage from 'html-to-image';
+import { toPng } from 'html-to-image';
 
 
 /**
@@ -94,7 +96,21 @@ const EducationPage = () => {
         setLanguage(prevLanguage => prevLanguage === 'english' ? 'french' : 'english');
         console.log('Language:', language);
     };
+    const divRef = useRef(null);
 
+    const handleDownloadImage = async () => {
+        if (!divRef.current) return; // Check if the ref is available
+
+        try {
+            const dataUrl = await toPng(divRef.current, { cache: false }); // Convert to PNG
+            const link = document.createElement('a');
+            link.href = dataUrl;
+            link.download = 'certificate.png'; // Customize the filename
+            link.click();
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    };
 
     const englishVideos = {
 
@@ -363,18 +379,18 @@ const EducationPage = () => {
                                         />
 
                                         {/* <button onClick={() => setShowCongratulationsPopup(false)}>Close</button> */}
-                                        <div className='certificate-wrapper'>
+                                        <div ref={divRef} className='certificate-wrapper'>
 
                                             <p className='certificate-wrapper-Date'>
                                                 {new Date().toLocaleDateString('en-US')}</p>
-                                            <p className='certificate-wrapper-Name'>{userGivenName}{' '}{userFamilyName}</p>
+                                            <p className='certificate-wrapper-Name'>{userGivenName} {userFamilyName}</p>
                                             <p className='certificate-wrapper-Sport'>{sport}</p>
                                             <img src={require('../assets/cert/SafeSportCompletionCertificate.png')} alt="Certification" className="certificate" />
                                         </div>
                                         <br></br>
 
 
-                                        <button class="btn btn-info" id="downloadPDF">Download as PDF</button>
+                                        <button onClick={handleDownloadImage}>Download Certificate</button>
                                     </div>
                                 )}
                             </div>

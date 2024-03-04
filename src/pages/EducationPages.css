@@ -208,7 +208,7 @@
 .certificate-wrapper-Name {
   position: absolute;
   font-family: 'Dancing Script', cursive !important;
-
+  white-space: nowrap !important;
 
   top: 270px;
   font-size: 38px !important;

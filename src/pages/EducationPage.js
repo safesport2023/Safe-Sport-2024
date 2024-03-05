@@ -390,8 +390,7 @@ const EducationPage = () => {
                                         <br></br>
 
 
-                                        <button className='dwn-btn ' onClick={handleDownloadImage} disabled={!sport}>Download Certificate</button>
-                                        {/* <button className='dwn-btn ' onClick={handleDownloadImage} disabled={!sport}>Recieve Certificate by Email</button> */}
+                                        <button onClick={handleDownloadImage}>Download Certificate</button>
                                     </div>
                                 )}
                             </div>

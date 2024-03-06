@@ -388,7 +388,7 @@ const EducationPage = () => {
                                             <img src={require('../assets/cert/SafeSportCompletionCertificate.png')} alt="Certification" className="certificate" />
                                         </div>
                                         <br></br>
-
+                                        {/* commment */}
 
                                         <button className='dwn-btn ' onClick={handleDownloadImage} disabled={!sport}>Download Certificate</button>
                                     </div>

@@ -15,7 +15,6 @@
     "html-to-image": "^1.11.11",
     "nth-check": "^2.0.1",
     "react": "^18.2.0",
-    "react-alert": "^7.0.3",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.6.0",
     "react-native": "^0.73.3",

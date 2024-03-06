@@ -1,7 +1,6 @@
 {
   "name": "itp-sports",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@aws-amplify/react-native": "^1.0.13",
     "@aws-amplify/ui-react": "^5.3.3",

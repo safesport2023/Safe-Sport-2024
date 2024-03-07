@@ -4,6 +4,7 @@
   "dependencies": {
     "@aws-amplify/react-native": "^1.0.13",
     "@aws-amplify/ui-react": "^5.3.3",
+    "@popperjs/core": "^2.11.5",
     "@react-native-async-storage/async-storage": "^1.21.0",
     "@react-native-community/netinfo": "^11.2.1",
     "@testing-library/jest-dom": "^5.17.0",

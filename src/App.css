@@ -93,7 +93,7 @@
   /*margin: 1em;*/
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 5px;
   /* Adjust the color as needed */
   text-decoration: none;
   transition: color 1.3s ease, transform 1.3s ease, font-size 1.3s ease;
@@ -104,8 +104,8 @@
   background-color: #c1c1c1;
   padding-top: 20px;
   margin-bottom: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   min-height: 80px;
 }
 

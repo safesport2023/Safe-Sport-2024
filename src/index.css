@@ -32,7 +32,7 @@ h6 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 55px;
 }
 
 h2 {
@@ -302,6 +302,10 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
+  h1 {
+    font-size: 50px;
+  }
+
   .default-div {
     max-width: 600px;
 

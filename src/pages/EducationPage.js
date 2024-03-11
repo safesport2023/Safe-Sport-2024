@@ -167,7 +167,7 @@ const EducationPage = () => {
         <InView>
             <div className="education-page">
                 <div className='page-title-div'>
-                    <h1 className='page-title'>{language === 'english' ? 'Educational Video Content' : 'Contenu Vidéo Éducatif'}</h1>
+                    <h1 className='page-title'>{language === 'english' ? 'Education' : 'Éducation'}</h1>
 
 
                 </div>

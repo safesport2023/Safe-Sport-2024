@@ -138,12 +138,7 @@ const Resources = () => {
 
                 <h4>{language === 'english' ? "For some other resources:" : "Pour d'autres ressources:"}</h4>
 
-                <br></br>
-                {/*  eslint-disable-next-line */}
-                <a href='https://www.bullyingcanada.ca/' target="_blank"><img className=" image-links2" src={BullyingCanadaLogo} alt="Bullying Canada Logo" ></img> </a>
-                <p>{language === 'english' ? "BullyingCanada's trained support volunteers and professional counsellors work one-on-one with bullied Canadian youth, their parents and local supports to stop bullying and heal victims." : "Les bénévoles de soutien formés de BullyingCanada et les conseillers professionnels travaillent en tête-à-tête avec les jeunes canadiens victimes d'intimidation, leurs parents et les soutiens locaux pour arrêter l'intimidation et guérir les victimes."}</p>
 
-                <hr className='thickLine clearfix' /> {/* Horizontal line divider */}
                 <br></br>
 
                 {/*  eslint-disable-next-line */}

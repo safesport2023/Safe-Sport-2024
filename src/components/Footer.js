@@ -26,8 +26,9 @@ function Footer() {
 
                 {/* Right Section (Email and Phone) */}
                 <div className="footer-contact">
-                    <p>Email: placeholder@email.com</p>
-                    <p>Phone: (123) 456-7890</p>
+                    <p>For inquiries please contact us at</p>
+                    <p>Email: hello@safesportforyouth.org</p>
+
                 </div>
             </div>
         </footer>

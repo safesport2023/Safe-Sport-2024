@@ -374,3 +374,26 @@ footer {
   /* Adjust height as needed */
   /* Add other styles like border, margin, etc. */
 }
+
+/* Amplify CSS properties for customization */
+.amplify-button {
+  background-color: #FF3131 !important;
+  color: whitesmoke !important;
+  box-shadow: #333 0px 0px 1px !important;
+}
+
+.amplify-button--link {
+  color: white !important;
+}
+
+.amplify-tabs-item {
+  color: #333 !important;
+}
+
+.amplify-tabs-item:active {
+  border-color: #FF3131 !important;
+}
+
+.amplify-tabs-item[data-state=active] {
+  border-color: #FF3131 !important;
+}

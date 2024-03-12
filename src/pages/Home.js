@@ -86,7 +86,7 @@ const Home = () => {
         <div className='home-page'>
             <div className='page-title-div'>
 
-                <h1 className='page-title'>{language === 'english' ? 'Welcome to Safe Sport' : 'Bienvenue chez Safe Sport'} <br></br> {language === 'english' ? 'Education for Youth' : 'Éducation pour les Jeunes'}</h1>
+                <h1 className='page-title'>{language === 'english' ? 'Welcome to the Safe Sport Education for Youth Program' : 'Bienvenue au programme d`éducation au sport sécuritaire pour les jeunes'} <br></br> {language === 'english' ? 'Education for Youth' : 'Éducation pour les Jeunes'}</h1>
             </div>
 
             <Authenticator className='home-page-authenticator' hideDefault={true}>

@@ -1,7 +1,7 @@
 .FAQ-page {
 
     min-height: 938px;
-    background-color: rgba(235, 246, 255, 0.2);
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;

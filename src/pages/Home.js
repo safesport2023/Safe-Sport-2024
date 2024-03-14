@@ -86,7 +86,7 @@ const Home = () => {
         <div className='home-page'>
             <div className='page-title-div'>
 
-                <h1 className='page-title'>{language === 'english' ? 'Welcome to the Safe Sport Education for Youth Program' : 'Bienvenue au programme d`éducation au sport sécuritaire pour les jeunes'} <br></br> {language === 'english' ? 'Education for Youth' : 'Éducation pour les Jeunes'}</h1>
+                <h1 className='page-title'>{language === 'english' ? 'Welcome to the Safe Sport Education for Youth Program' : 'Bienvenue au programme d`éducation au sport sécuritaire pour les jeunes'} </h1><br></br>
             </div>
 
             <Authenticator className='home-page-authenticator' hideDefault={true}>
@@ -120,7 +120,10 @@ const Home = () => {
                 </video>
 
             </div>
-            <div className='welcome-statement default-div'>
+            <div className='default-div'>
+                <h2 >{language === 'english' ? 'Safe Sport Education for Youth Overview' : 'Éducation au sport sécuritaire pour les jeunes'} <br></br> {language === 'english' ? 'Education for Youth' : 'Éducation pour les Jeunes'}</h2>
+            </div>
+            {/* <div className='welcome-statement default-div'>
                 <p>{language === 'english' ? `Welcome to Safe Sport Education for Youth! This educational program will provide you with all the tools you need to have a safe and positive sports experience. Safe Sport Education for Youth is brought to you by the National Sports Organizations representing athletics, volleyball, and swimming. These videos are short and all you need to do is watch them. Easy right? Check out the videos and be a part of our new movement called Safe Sport.` : `Bienvenue à l'éducation Safe Sport pour la jeunesse ! Ce programme éducatif vous fournira tous les outils nécessaires pour vivre une expérience sportive sûre et positive. L'éducation Safe Sport pour la jeunesse vous est proposée par les organisations nationales de sports représentant l'athlétisme, le volleyball et la natation. Ces vidéos sont courtes et tout ce que vous avez à faire est de les regarder. Facile non ? Regardez les vidéos et faites partie de notre nouveau mouvement appelé Safe Sport.`}</p>
 
                 <br></br>
@@ -131,10 +134,16 @@ const Home = () => {
                 <br></br>
                 <p>{language === 'english' ? `Some of the information you hear may be hard to hear and could make you uncomfortable. We've got a page ` : `Certaines des informations que vous entendrez peuvent être difficiles à entendre et peuvent vous mettre mal à l'aise. Nous avons une page `}<Link className='custom-links' to="/resources"> (Resources)</Link>{language === 'english' ? ` with links to some of the support and resources available to help you get through it. There are there to help you.` : ` avec des liens vers certains des soutiens et ressources disponibles pour vous aider à y faire face. Ils sont là pour vous aider.`}</p>
 
+            </div> */}
+            <div className='welcome-statement default-div'>
+                <p>{language === 'english' ? `This new Safe Sport Education Program for Youth aged 13-19 provides a comprehensive approach to fostering a safe and respectful sporting environment. This program covers essential topics such as recognizing and reporting abuse, setting boundaries, and promoting healthy relationships within sports communities. Through interactive modules and engaging discussions, participants will gain the knowledge and skills necessary to navigate potential risks and protect themselves and others. It's important to note that some of the information covered may evoke discomfort, and participants are encouraged to seek out support (Visit our Resources Page ` : `Ce nouveau programme d'éducation sur le sport sécuritaire destiné aux jeunes âgés de 13 à 19 ans propose une approche globale pour favoriser un environnement sportif sûr et respectueux. Ce programme couvre des sujets essentiels tels que reconnaître et signaler les abus, fixer des limites et promouvoir des relations saines au sein des communautés sportives. Grâce à des modules interactifs et à des discussions engageantes, les participants acquerront les connaissances et les compétences nécessaires pour gérer les risques potentiels et se protéger ainsi que les autres. Il est important de noter que certaines des informations couvertes peuvent susciter un inconfort, et les participants sont encouragés à rechercher de l'aide (visitez notre page de ressources `}<Link className='custom-links' to="/resources"> {language === 'english' ? `Here` : `Ici`}</Link>{language === 'english' ? ` ) if needed. For those under the age of 13 we strongly suggest you take this training with the support of a parent or guardian. Together, we strive to create a culture of safety and empowerment in sports for all young athletes.` : ` ) si nécessaire. Pour les moins de 13 ans, nous vous suggérons fortement de suivre cette formation avec le soutien d'un parent ou d'un tuteur. Ensemble, nous nous efforçons de créer une culture de sécurité et d'autonomisation dans le sport pour tous les jeunes athlètes.`}</p>
+
+
+
             </div>
             <div className='gap-container'>
             </div>
-            <div className='welcome-statement default-div'>
+            {/* <div className='welcome-statement default-div'>
                 <p>{language === 'english' ? `So how does the Safe Sport for Youth program work. We kept it simple for anyone to use. Just follow these step by step instructions and be open to learning:` : `Alors, comment fonctionne le programme Safe Sport for Youth. Nous l'avons rendu simple pour que tout le monde puisse l'utiliser. Suivez simplement ces instructions étape par étape et soyez ouvert à l'apprentissage:`}</p>
 
                 <br></br>
@@ -154,12 +163,9 @@ const Home = () => {
                 </p>
 
             </div>
-
-
-
-            <div className='gap-container'>
-            </div>
+            <div className='gap-container'> */}
         </div>
+
     );
 };
 

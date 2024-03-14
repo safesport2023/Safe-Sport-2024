@@ -167,9 +167,12 @@ const EducationPage = () => {
         <InView>
             <div className="education-page">
                 <div className='page-title-div'>
-                    <h1 className='page-title'>{language === 'english' ? 'Education' : 'Éducation'}</h1>
+                    <h1 className='page-title'>{language === 'english' ? 'Maltreatment Education' : 'Éducation sur la maltraitance'}</h1>
 
 
+                </div>
+                <div className='lang-button-div'>
+                    <button className=' mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
                 </div>
                 <Authenticator className='education-page-authenticator'>
 
@@ -182,9 +185,7 @@ const EducationPage = () => {
                             </div>
 
 
-                            <div className='lang-button-div'>
-                                <button className=' mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
-                            </div>
+
                             <div className="video-container">
 
 

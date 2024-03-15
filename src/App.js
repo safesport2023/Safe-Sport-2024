@@ -35,6 +35,7 @@ function App() {
 
   return (
     <div className="App">
+
       <div className='background-div'>
 
         <Router>
@@ -43,8 +44,8 @@ function App() {
             <NavLink className="content-link" exact activeClassName="active" to="/">Home</NavLink>
 
             <NavLink className="content-link" activeClassName="active" to="/education">Education</NavLink>
-            <NavLink className="content-link" activeClassName="active" to="/HeroMsg">Hear From Your Heroes</NavLink>
-            <NavLink className="content-link" activeClassName="active" to="/Resources">Resources and Support</NavLink>
+            <NavLink className="content-link" activeClassName="active" to="/HeroMsg">Testimonials</NavLink>
+            <NavLink className="content-link" activeClassName="active" to="/Resources">Resources</NavLink>
             <NavLink className="content-link" activeClassName="active" to="/FAQ">FAQs</NavLink>
 
           </div>
@@ -55,8 +56,8 @@ function App() {
             <div className={`mobile-menu ${mobileMenuVisible ? 'visible' : ''}`}>
               <NavLink className="content-link" exact activeClassName="active" to="/">Home</NavLink>
               <NavLink className="content-link" activeClassName="active" to="/education">Education</NavLink>
-              <NavLink className="content-link" activeClassName="active" to="/HeroMsg">Hear From Your Heroes</NavLink>
-              <NavLink className="content-link" activeClassName="active" to="/Resources">Resources and Support</NavLink>
+              <NavLink className="content-link" activeClassName="active" to="/HeroMsg">Testimonials</NavLink>
+              <NavLink className="content-link" activeClassName="active" to="/Resources">Resources</NavLink>
               <NavLink className="content-link" activeClassName="active" to="/FAQ">Frequently Asked Questions</NavLink>
 
             </div>

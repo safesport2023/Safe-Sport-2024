@@ -76,7 +76,7 @@ a {
   color: rgb(255, 255, 255);
   font-size: 80px;
   text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.8);
-  max-width: 1000px;
+  max-width: 1100px;
 
 }
 
@@ -194,9 +194,9 @@ footer {
   background-color: #FF3131 !important;
   color: whitesmoke;
   border: none;
-  margin-top: 20px;
+  min-width: 160px;
   border-radius: 5px;
-  top: 18px;
+  top: 15px;
   right: 18px;
   transition: all.2s ease-in-out;
   font-size: 18px !important;
@@ -212,15 +212,17 @@ footer {
 
 .signOut-btn {
   position: absolute;
-  left: -80px;
+
   background-color: #FF3131 !important;
   color: whitesmoke;
   border: none;
-  min-width: 80px;
+  top: -65px;
+  left: -153px;
+  min-width: 160px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
-  top: 20px;
+
   transition: all.2s ease-in-out;
 }
 
@@ -276,7 +278,7 @@ footer {
     border: none;
     margin-top: 20px;
     border-radius: 5px;
-    top: 25px;
+    top: -2px;
     right: 18px;
     transition: all.2s ease-in-out;
     font-size: 16px;
@@ -289,14 +291,16 @@ footer {
     background-color: #FF3131 !important;
     color: whitesmoke;
     border: none;
-    min-width: 80px;
+
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     scale: .95;
-    top: 0px;
-    right: 18px;
 
+    right: 18px;
+    top: -65px;
+    left: -153px;
+    min-width: 160px;
   }
 
 }
@@ -344,23 +348,35 @@ footer {
 
   .lang-button-div {
     position: absolute;
-    left: 120px;
+    background-color: #FF3131 !important;
+    color: whitesmoke;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    top: -2px;
+    right: -5px;
     transition: all.2s ease-in-out;
+    font-size: 16px;
+    scale: .75;
+    min-width: 120px;
 
   }
 
   .signOut-btn {
-
+    position: absolute;
     background-color: #FF3131 !important;
     color: whitesmoke;
     border: none;
-    margin-left: -30px;
+
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    /* scale: .75; */
-    scale: 2.75;
-    z-index: 200;
+    scale: .75;
+
+    right: 0px;
+    top: -65px;
+    left: -115px;
+    min-width: 145px;
   }
 
 }

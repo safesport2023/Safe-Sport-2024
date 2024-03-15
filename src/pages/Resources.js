@@ -5,7 +5,7 @@ import AbuseFreeSport from '../assets/AFSSA.png'
 import emergencyLogoA from '../assets/911helpline.png'
 import emergencyLogoB from '../assets/988helpline.png'
 import AoSlogo from '../assets/AoSLogo.png'
-import BullyingCanadaLogo from '../assets/bullyingcanadalogo.png'
+
 import SwimmingLogo from '../assets/logos/Swim Canada Logo.png'
 import VolleyballLogo from '../assets/logos/Volleyball Canada Logo.jpg'
 import AthleticsLogo from '../assets/logos/Athletics Canada Logo.png'
@@ -85,7 +85,7 @@ const Resources = () => {
             <div className='content-section'>
                 <h3>{language === 'english' ? 'Abuse Reporting Resources' : 'Ressources de signalement de mauvais traitements'}</h3>
                 <p>
-                    {language === 'english' ? 'If you would like to file a complaint, need more information on where and how to file a complaint, or just want to talk to someone who can support you in the process please contact' : 'Si vous souhaitez déposer une plainte, avez besoin de plus d\'informations sur où et comment déposer une plainte, ou si vous souhaitez simplement parler à quelqu\'un qui peut vous soutenir dans le processus, veuillez contacter'}
+                    {language === 'english' ? 'If you would like to file a complaint, need more information on where and how to file a complaint, or just want to talk to someone who can support you in the process please contact ' : 'Si vous souhaitez déposer une plainte, avez besoin de plus d\'informations sur où et comment déposer une plainte, ou si vous souhaitez simplement parler à quelqu\'un qui peut vous soutenir dans le processus, veuillez contacter '}
                     abusefreesport.ca
                 </p>
 
@@ -106,14 +106,14 @@ const Resources = () => {
                     {language === 'english' ? "If it's not an emergency and you need help or support, there's plenty of other options available to you." : "S'il ne s'agit pas d'une urgence et que vous avez besoin d'aide ou de soutien, de nombreuses autres options s'offrent à vous."}
                 </p>
                 <p>
-                    {language === 'english' ? 'For Safe Sport information for the following sports (and please check out your club\'s or National Sporting Organizations website as well):' : 'Pour des informations sur le sport sécuritaire pour les sports suivants (et veuillez également consulter le site Web de votre club ou de votre organisation sportive nationale):'}
+                    {language === 'english' ? 'For Safe Sport information for the following sports (and please check out your club`s or Provincial/Territorial Sporting Organizations website as well):' : 'Pour des informations sur le sport sécuritaire pour les sports suivants (et veuillez également consulter le site Web de votre club ou de votre organisation sportive Provincial/Territorial):'}
                 </p>
 
                 <hr className='thickLine clearfix' /> {/* Horizontal line divider */}
                 <div className='logoandtextline'>
                     {/*  eslint-disable-next-line */}
                     <a href='https://athletics.ca/safesport/' target="_blank"><img className="image-links3" src={AthleticsLogo} alt="Athletics Canada Logo" ></img> </a>
-                    <h4>{language === 'english' ? "Athletics Canada Safe Sport page" : "Page Safe Sport d'Athlétisme Canada"}</h4>
+                    <h4>{language === 'english' ? "Athletics Canada's Safe Sport page" : "Page sur le sport sécuritaire d'Athlétisme Canada"}</h4>
 
                 </div>
 
@@ -136,7 +136,7 @@ const Resources = () => {
 
                 <hr className='thickLine clearfix' /> {/* Horizontal line divider */}
 
-                <h4>{language === 'english' ? "For some other resources:" : "Pour d'autres ressources:"}</h4>
+                {/* <h4>{language === 'english' ? "For some other resources:" : "Pour d'autres ressources:"}</h4> */}
 
 
                 <br></br>
@@ -151,13 +151,13 @@ const Resources = () => {
                 <a href='https://www.protectchildren.ca/en/' target="_blank"><img className="image-links3" src={CCCPlogo} alt="CCCP Logo" ></img> </a>
                 <p>{language === 'english' ? "The Canadian Centre for Child Protection is a national charity dedicated to the personal safety of all children. Our goal is to reduce the sexual abuse and exploitation of children, assist in the location of missing children, and prevent child victimization." : "Le Centre canadien de protection de l'enfance est un organisme de bienfaisance national dédié à la sécurité personnelle de tous les enfants. Notre objectif est de réduire l'abus sexuel et l'exploitation des enfants, d'aider à localiser les enfants disparus et de prévenir la victimisation des enfants."}</p>
 
-                <hr className='thickLine clearfix' /> {/* Horizontal line divider */}
+                {/* <hr className='thickLine clearfix' /> 
 
                 <h4>
-                    {/*  eslint-disable-next-line */}
+                    
                     <a className='bulliedbrain' href='https://bulliedbrain.com/' target="_blank">Bullied Brain</a>
                 </h4>
-                <p>{language === 'english' ? "The Bullied Brain provides confidential, preventative, proactive, and protective evidence-based approaches to psychological health and safety in your organization." : "Le Bullied Brain propose des approches préventives, proactives et protectrices, fondées sur des preuves, pour la santé psychologique et la sécurité dans votre organisation."}</p>
+                <p>{language === 'english' ? "The Bullied Brain provides confidential, preventative, proactive, and protective evidence-based approaches to psychological health and safety in your organization." : "Le Bullied Brain propose des approches préventives, proactives et protectrices, fondées sur des preuves, pour la santé psychologique et la sécurité dans votre organisation."}</p> */}
 
             </div>
         </div >

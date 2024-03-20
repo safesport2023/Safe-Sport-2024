@@ -9,13 +9,13 @@ function Footer() {
                 {/* Left Section (Logos) */}
                 <div className="footer-logos">
                     <a href="https://www.swimming.ca/en/" target="_blank" rel="noopener noreferrer" className="logo-link">
-                        <img className='swim-voll' src={require('../assets/logos/Swim Canada Logo.png')} alt="Logo 1" />
+                        <img className='swim-voll' src={require('../assets/logos/Swim_Canada_Logo.png')} alt="Logo 1" />
                     </a>
                     <a href="https://athletics.ca/" target="_blank" rel="noopener noreferrer" className="logo-link">
-                        <img className='athlCan' src={require('../assets/logos/Athletics Canada Logo.png')} alt="Logo 2" />
+                        <img className='athlCan' src={require('../assets/logos/Athletics_Canada_Logo.png')} alt="Logo 2" />
                     </a>
                     <a href="https://volleyball.ca/" target="_blank" rel="noopener noreferrer" className="logo-link">
-                        <img className='swim-voll' src={require('../assets/logos/Volleyball Canada Logo.jpg')} alt="Logo 3" />
+                        <img className='swim-voll' src={require('../assets/logos/Volleyball_Canada_Logo.png')} alt="Logo 3" />
                     </a>
                 </div>
 

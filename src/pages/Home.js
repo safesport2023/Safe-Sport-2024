@@ -121,7 +121,7 @@ const Home = () => {
 
             </div>
             <div className='default-div'>
-                <h2 >{language === 'english' ? 'Safe Sport Education for Youth Overview' : 'Éducation au sport sécuritaire pour les jeunes'} <br></br> {language === 'english' ? 'Education for Youth' : 'Éducation pour les Jeunes'}</h2>
+                <h2 >{language === 'english' ? 'Safe Sport Education for Youth Overview' : 'Éducation au sport sécuritaire pour les jeunes'} <br></br> </h2>
             </div>
             {/* <div className='welcome-statement default-div'>
                 <p>{language === 'english' ? `Welcome to Safe Sport Education for Youth! This educational program will provide you with all the tools you need to have a safe and positive sports experience. Safe Sport Education for Youth is brought to you by the National Sports Organizations representing athletics, volleyball, and swimming. These videos are short and all you need to do is watch them. Easy right? Check out the videos and be a part of our new movement called Safe Sport.` : `Bienvenue à l'éducation Safe Sport pour la jeunesse ! Ce programme éducatif vous fournira tous les outils nécessaires pour vivre une expérience sportive sûre et positive. L'éducation Safe Sport pour la jeunesse vous est proposée par les organisations nationales de sports représentant l'athlétisme, le volleyball et la natation. Ces vidéos sont courtes et tout ce que vous avez à faire est de les regarder. Facile non ? Regardez les vidéos et faites partie de notre nouveau mouvement appelé Safe Sport.`}</p>

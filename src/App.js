@@ -41,7 +41,7 @@ function App() {
         <Router>
           <Header />
           <div className="content-desktop">
-            <NavLink className="content-link" exact activeClassName="active" to="/lander">Home</NavLink>
+            <NavLink className="content-link" exact activeClassName="active" to="/">Home</NavLink>
 
             <NavLink className="content-link" activeClassName="active" to="/education">Education</NavLink>
             <NavLink className="content-link" activeClassName="active" to="/HeroMsg">Testimonials</NavLink>
@@ -54,7 +54,7 @@ function App() {
               ☰
             </button>
             <div className={`mobile-menu ${mobileMenuVisible ? 'visible' : ''}`}>
-              <NavLink className="content-link" exact activeClassName="active" to="/lander">Home</NavLink>
+              <NavLink className="content-link" exact activeClassName="active" to="/">Home</NavLink>
               <NavLink className="content-link" activeClassName="active" to="/education">Education</NavLink>
               <NavLink className="content-link" activeClassName="active" to="/HeroMsg">Testimonials</NavLink>
               <NavLink className="content-link" activeClassName="active" to="/Resources">Resources</NavLink>
@@ -66,7 +66,7 @@ function App() {
 
 
           <Routes>
-            <Route path="/lander" element={<Home />}></Route>
+            <Route path="/" element={<Home />}></Route>
             <Route path="/FAQ" element={<FAQ />}></Route>
             <Route path="/education" element={<EducationPage />}></Route>
             <Route path="/HeroMsg" element={<HeroMsg />}></Route>

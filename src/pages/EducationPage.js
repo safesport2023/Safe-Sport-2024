@@ -179,9 +179,7 @@ const EducationPage = () => {
                     {({ signOut, user }) => (
                         <div className="education-page1">
                             <div className="logout-btn">
-                                <button className="signOut-btn" onClick={signOut}>
-                                    Sign Out
-                                </button>
+                                <button className="signOut-btn" onClick={signOut}>{language === 'english' ? 'Sign Out' : 'Se déconnecter'}</button>
                             </div>
 
 
@@ -363,9 +361,10 @@ const EducationPage = () => {
                                 {/* this is the pop up where the user enters the info for the cirtificate */}
                                 {showCongratulationsPopup && (
                                     <div className="congratulations-popup congrats-div">
-                                        <h2>Congratulations!</h2>
+                                        <h2>{language === 'english' ? 'Congratulations!' : 'Toutes nos félicitations!'}</h2>
                                         <br></br>
-                                        <p>You've finished watching all the video modules. Please enter the sport you are associated with and want to appear on your Cirtificate.</p>
+                                        <p>{language === 'english' ? 'You`ve finished watching all the video modules. Please enter the sport you are associated with and want to appear on your Certificate.' : 'Vous avez fini de regarder tous les modules vidéo. Veuillez entrer le sport auquel vous êtes associé et que vous souhaitez apparaître sur votre certificat.'}</p>
+                                        <p>{language === 'english' ? 'You`ve finished watching all the video modules. Please enter the sport you are associated with and want to appear on your Certificate.' : 'Vous avez fini de regarder tous les modules vidéo. Veuillez entrer le sport auquel vous êtes associé et que vous souhaitez apparaître sur votre certificat.'}</p>
 
 
 

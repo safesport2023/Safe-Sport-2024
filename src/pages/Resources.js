@@ -34,7 +34,7 @@ const Resources = () => {
 
             </div>
             <div className='lang-button-div'>
-                <button className='mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
+                <button className='mobile-btn-lang' onClick={toggleLanguage}>{language === 'english' ? 'Passer au Français' : 'Switch to English'}</button>
             </div>
             <div className='welcome-statement default-div'>
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import { Amplify } from 'aws-amplify';
@@ -29,6 +29,17 @@ function App() {
   const toggleMobileMenu = () => {
     setMobileMenuVisible(!mobileMenuVisible);
   };
+  //language handler 
+  const [language, setLanguage] = useState('english'); // Default language is English
+
+
+  // Define video URLs based on the selected language
+
+  const toggleLanguage = () => {
+    // Toggle between English and French
+    setLanguage(prevLanguage => prevLanguage === 'english' ? 'french' : 'english');
+    console.log('Language change from header:', language);
+  };
 
 
 
@@ -37,16 +48,18 @@ function App() {
     <div className="App">
 
       <div className='background-div'>
+        <div className='lang-button-div'>
+          <button className='mobile-btn-lang' onClick={toggleLanguage}>{language === 'english' ? 'Passer au Français' : 'Switch to English'}</button>
+        </div>
 
         <Router>
           <Header />
           <div className="content-desktop">
-            <NavLink className="content-link" exact activeClassName="active" to="/">Home</NavLink>
-
-            <NavLink className="content-link" activeClassName="active" to="/education">Education</NavLink>
-            <NavLink className="content-link" activeClassName="active" to="/HeroMsg">Testimonials</NavLink>
-            <NavLink className="content-link" activeClassName="active" to="/Resources">Resources</NavLink>
-            <NavLink className="content-link" activeClassName="active" to="/FAQ">FAQs</NavLink>
+            <NavLink className="content-link" exact activeClassName="active" to="/">{language === 'english' ? 'Home' : 'Maison'}</NavLink>
+            <NavLink className="content-link" activeClassName="active" to="/education">{language === 'english' ? 'Education' : 'Éducation'}</NavLink>
+            <NavLink className="content-link" activeClassName="active" to="/HeroMsg">{language === 'english' ? 'Testimonials' : 'Témoignages'}</NavLink>
+            <NavLink className="content-link" activeClassName="active" to="/Resources">{language === 'english' ? 'Resources' : 'Ressources'}</NavLink>
+            <NavLink className="content-link" activeClassName="active" to="/FAQ">{language === 'english' ? 'FAQs' : 'FAQs'}</NavLink>
 
           </div>
           <div className="content-mobile">
@@ -54,11 +67,11 @@ function App() {
               ☰
             </button>
             <div className={`mobile-menu ${mobileMenuVisible ? 'visible' : ''}`}>
-              <NavLink className="content-link" exact activeClassName="active" to="/">Home</NavLink>
-              <NavLink className="content-link" activeClassName="active" to="/education">Education</NavLink>
-              <NavLink className="content-link" activeClassName="active" to="/HeroMsg">Testimonials</NavLink>
-              <NavLink className="content-link" activeClassName="active" to="/Resources">Resources</NavLink>
-              <NavLink className="content-link" activeClassName="active" to="/FAQ">Frequently Asked Questions</NavLink>
+              <NavLink className="content-link" exact activeClassName="active" to="/">{language === 'english' ? 'Home' : 'Maison'}</NavLink>
+              <NavLink className="content-link" activeClassName="active" to="/education">{language === 'english' ? 'Education' : 'Éducation'}</NavLink>
+              <NavLink className="content-link" activeClassName="active" to="/HeroMsg">{language === 'english' ? 'Testimonials' : 'Témoignages'}</NavLink>
+              <NavLink className="content-link" activeClassName="active" to="/Resources">{language === 'english' ? 'Resources' : 'Ressources'}</NavLink>
+              <NavLink className="content-link" activeClassName="active" to="/FAQ">{language === 'english' ? 'FAQs' : 'FAQs'}</NavLink>
 
             </div>
 

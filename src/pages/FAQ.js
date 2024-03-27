@@ -22,7 +22,8 @@ const FAQ = () => {
 
             </div>
             <div className='lang-button-div'>
-                <button className='mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
+                {/* <button className='mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button> */}
+                <button className='mobile-btn-lang' onClick={toggleLanguage}>{language === 'english' ? 'Passer au Français' : 'Switch to English'}</button>
             </div>
 
             <div className='conent-section'>
@@ -109,7 +110,7 @@ const FAQ = () => {
                     <p class="question">{language === 'english' ? "Do I need my parent or guardian's permission before I watch these videos?" : "Ai-je besoin de la permission de mes parents ou de mon tuteur avant de regarder ces vidéos ?"}</p>
                     <div class="line-divider"></div>
                     <div class="answer">
-                        <p>{language === 'english' ? "We highly recommend talking with the trusted adults in your life before you watch these videos. Even better- watch together!If you are under 13 years old we strongly recommend you ask your parents before watching our videos." : "Nous recommandons fortement de parler avec les adultes de confiance dans votre vie avant de regarder ces vidéos. Encore mieux - regardez-les ensemble ! Si vous avez moins de 13 ans, nous vous recommandons vivement de demander l'autorisation de vos parents avant de regarder nos vidéos."}</p>
+                        <p>{language === 'english' ? "We highly recommend talking with the trusted adults in your life before you watch these videos. Even better- watch together! If you are under 13 years old we strongly recommend you ask your parents before watching our videos." : "Nous recommandons fortement de parler avec les adultes de confiance dans votre vie avant de regarder ces vidéos. Encore mieux - regardez-les ensemble! Si vous avez moins de 13 ans, nous vous recommandons vivement de demander l'autorisation de vos parents avant de regarder nos vidéos."}</p>
                     </div>
 
                 </div>

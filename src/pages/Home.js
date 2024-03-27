@@ -92,7 +92,7 @@ const Home = () => {
             <Authenticator className='home-page-authenticator' hideDefault={true}>
                 {({ signOut, user }) => (
                     <div className="logout-btn">
-                        <button className="signOut-btn" onClick={signOut}>Sign Out</button>
+                        <button className="signOut-btn" onClick={signOut}>{language === 'english' ? 'Sign Out' : 'Se déconnecter'}</button>
                     </div>
                 )}
 
@@ -100,7 +100,7 @@ const Home = () => {
             </Authenticator>
 
             <div className='lang-button-div'>
-                <button className='mobile-btn-lang' onClick={toggleLanguage}>Switch to {language === 'english' ? 'French' : 'English'}</button>
+                <button className='mobile-btn-lang' onClick={toggleLanguage}>{language === 'english' ? 'Passer au Français' : 'Switch to English'}</button>
             </div>
             {/* {userEmail ? (
                 <div className="user-email-container">
